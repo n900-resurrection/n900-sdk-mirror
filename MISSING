@@ -1,0 +1,6 @@
+# Names that the SDK repository does not have (virtual packages, translations): not looked up again.
+hildon-fm-l10n-mr
+hildon-libs-l10n-mr
+libc-dev
+osso-sounds-ui
+osso-system-lock-l10n-mr

@@ -1,0 +1,2543 @@
+Package: dbus
+Version: 1.2.14-0maemo4+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libdbus-1-3 (>= 1.1.1), libexpat1 (>= 1.95.8), passwd, lsb-base (>= 3.2-14)
+Recommends: dbus-x11
+Conflicts: libdbus0, dbus-1, dbus-1-utils (<< 1.0.2-5), libdbus-1-1
+Replaces: libdbus0, dbus-1, dbus-1-utils (<< 1.0.2-5), system-services
+Provides: dbus-1-utils
+Installed-Size: 580
+Maintainer: Janne Karhunen <janne.karhunen@nokia.com>
+Priority: optional
+Section: devel
+Filename: pool/maemo5.0/free/d/dbus/dbus_1.2.14-0maemo4+0m5_armel.deb
+Size: 207300
+MD5sum: f00c208d6a5eed0187b332129666149e
+Description: simple interprocess messaging system
+ D-Bus is a message bus, used for sending messages between applications.
+ Conceptually, it fits somewhere in between raw sockets and CORBA in
+ terms of complexity.
+ .
+ D-Bus supports broadcast messages, asynchronous messages (thus
+ decreasing latency), authentication, and more. It is designed to be
+ low-overhead; messages are sent using a binary protocol, not using
+ XML. D-Bus also supports a method call mapping for its messages, but
+ it is not required; this makes using the system quite simple.
+ .
+ It comes with several bindings, including GLib, Python, Qt and Java.
+ .
+ This package contains the D-Bus daemon and related utilities.
+ .
+ The client-side library can be found in the libdbus-1-3 package, as it is no
+ longer contained in this package.
+
+Package: debconf
+Version: 1.4.70.osso3+0m5
+Architecture: all
+Pre-Depends: perl-base (>= 5.6.1-4)
+Depends: debconf-i18n | debconf-english
+Recommends: apt-utils (>= 0.5.1)
+Suggests: debconf-doc, debconf-utils, whiptail | dialog | gnome-utils, libterm-readline-gnu-perl, libgnome2-perl, libqt-perl, libnet-ldap-perl, perl
+Conflicts: cdebconf (<< 0.96), debconf-tiny, apt (<< 0.3.12.1), menu (<= 2.1.3-1), dialog (<< 0.9b-20020814-1), whiptail (<< 0.51.4-11), whiptail-utf8 (<= 0.50.17-13), debconf-utils (<< 1.3.22)
+Replaces: debconf-tiny
+Provides: debconf-2.0
+Installed-Size: 848
+Maintainer: Joey Hess <joeyh@debian.org>
+Priority: important
+Section: admin
+Filename: pool/maemo5.0/free/d/debconf/debconf_1.4.70.osso3+0m5_all.deb
+Size: 104256
+MD5sum: aa7ffbd299bf490183ae9502b5115b2e
+Description: Debian configuration management system
+ Debconf is a configuration management system for debian packages. Packages
+ use Debconf to ask questions when they are installed.
+
+Package: debconf-english
+Version: 1.4.70.osso3+0m5
+Architecture: all
+Depends: debconf
+Conflicts: debconf-i18n
+Installed-Size: 20
+Maintainer: Joey Hess <joeyh@debian.org>
+Source: debconf
+Priority: extra
+Section: admin
+Filename: pool/maemo5.0/free/d/debconf/debconf-english_1.4.70.osso3+0m5_all.deb
+Size: 852
+MD5sum: 072160da83fb936befb79aa9c80a1dde
+Description: small footprint English-only debconf
+ This package is an alternative to the debconf-i18n package, intended for
+ systems that are administered only in English, and low-footprint systems.
+ If you install this package, debconf will not work properly in other
+ languages, but you'll save half a megabyte of disk space.
+
+Package: fontconfig
+Version: 2.6.0-1osso1+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libexpat1 (>= 1.95.8), libfontconfig1 (>= 2.6.0), libfreetype6 (>= 2.3.9), zlib1g (>= 1:1.2.1), gconf2 (>= 2.6.0)
+Installed-Size: 252
+Maintainer: Richard Sun <richard.sun@nokia.com>
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/f/fontconfig/fontconfig_2.6.0-1osso1+0m5_armel.deb
+Size: 27562
+MD5sum: 25348f24b686ba62720be7cc5e240617
+Description: generic font configuration library
+ Fontconfig is a font configuration and customization library, which
+ does not depend on the X Window System.  It is designed to locate
+ fonts within the system and select them according to requirements
+ specified by applications.
+ .
+ Fontconfig is not a rasterization library, nor does it impose a
+ particular rasterization library on the application.  The X-specific
+ library 'Xft' uses fontconfig along with freetype to specify and
+ rasterize fonts.
+ .
+ This package contains a program to maintain the fontconfig cache
+ (fc-cache), and a sample program to list installed fonts (fc-list).
+
+Package: gcc-4.2-base
+Version: 4.2.1-4maemo13+0m5
+Architecture: armel
+Installed-Size: 160
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Source: gcc-4.2
+Priority: required
+Section: libs
+Filename: pool/maemo5.0/free/g/gcc-4.2/gcc-4.2-base_4.2.1-4maemo13+0m5_armel.deb
+Size: 101654
+MD5sum: 62cd3bf2803f9974d0b5c19bc42e2e2f
+Description: The GNU Compiler Collection (base package)
+ This package contains files common to all languages and libraries
+ contained in the GNU Compiler Collection (GCC).
+
+Package: gconf2
+Version: 2.16.0-2osso6.3+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libdbus-1-3 (>= 1.1.4), libdbus-glib-1-2 (>= 0.76), libgconf2-6 (>= 2.13.5), libglib2.0-0 (>= 2.20.0), libxml2 (>= 2.6.32), dbus
+Conflicts: gconf (<< 1.0.6-4), libgconf11 (<< 1.0.9-2.1)
+Replaces: libgconf2-4 (<< 1.1.10-2)
+Installed-Size: 372
+Maintainer: Kimmo Hämäläinen <kimmo.hamalainen@nokia.com>
+Priority: optional
+Section: admin
+Filename: pool/maemo5.0/free/g/gconf2/gconf2_2.16.0-2osso6.3+0m5_armel.deb
+Size: 136280
+MD5sum: 1246439011d989423cd805429dea2deb
+Description: GNOME configuration database system. (daemon and tools, for GNOME2)
+ GConf is a configuration database system, functionally similar to the
+ Windows registry but lots better. :-) It's being written for the GNOME
+ desktop but does not require GNOME.
+ .
+ This package contains gconfd daemon and gconf tools binaries for GNOME2
+
+Package: gtk20-l10n
+Version: 4.6+0m5
+Architecture: all
+Installed-Size: 1292
+Maintainer: Blomberg Maciej <ext-maciej.blomberg@nokia.com>
+Priority: optional
+Section: misc
+Filename: pool/maemo5.0/free/g/gtk20-l10n/gtk20-l10n_4.6+0m5_all.deb
+Size: 394266
+MD5sum: 779dac23d601c503398d7029fd0d3426
+Description: Gtk+ locale files.
+ These are the Gtk+ translations. Gettext domain gtk20
+
+Package: libasound2
+Version: 1.0.20-0maemo1+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1)
+Suggests: libasound2-plugins (>= 1.0.18)
+Conflicts: libasound2-plugins (<< 1.0.18)
+Installed-Size: 1188
+Maintainer: Maemo Multimedia <multimedia@maemo.org>
+Source: alsa-lib
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/a/alsa-lib/libasound2_1.0.20-0maemo1+0m5_armel.deb
+Size: 357652
+MD5sum: 33f1cc84133271441ccb8362bfc2750d
+Description: shared library for ALSA applications
+ This package contains the ALSA library and its standard plugins.
+ .
+ ALSA is the Advanced Linux Sound Architecture.
+Xsbc-Original-Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+
+Package: libatk1.0-0
+Version: 1.24.0-2maemo1
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libglib2.0-0 (>= 2.14.6-1osso1)
+Recommends: libatk1.0-data
+Installed-Size: 200
+Maintainer: Christian Dywan <christian@imendio.com>
+Source: atk1.0
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/a/atk1.0/libatk1.0-0_1.24.0-2maemo1_armel.deb
+Size: 78200
+MD5sum: 3d70712e3487d152e7301be64d6444c2
+Description: The ATK accessibility toolkit
+ ATK is a toolkit providing accessibility interfaces for applications or
+ other toolkits. By implementing these interfaces, those other toolkits or
+ applications can be used with tools such as screen readers, magnifiers, and
+ other alternative input devices.
+ .
+ This is the runtime part of ATK, needed to run applications built with it.
+
+Package: libatk1.0-dev
+Version: 1.24.0-2maemo1
+Architecture: armel
+Depends: libatk1.0-0 (= 1.24.0-2maemo1), pkg-config, libglib2.0-dev (>= 2.4.1-2)
+Conflicts: libatk0-dev, libatk-dev
+Replaces: libatk0-dev, libatk-dev
+Installed-Size: 484
+Maintainer: Christian Dywan <christian@imendio.com>
+Source: atk1.0
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/a/atk1.0/libatk1.0-dev_1.24.0-2maemo1_armel.deb
+Size: 116880
+MD5sum: 73c47fd3fe4fe037caffb63c8d50f162
+Description: Development files for the ATK accessibility toolkit
+ ATK is a toolkit providing accessibility interfaces for applications or
+ other toolkits. By implementing these interfaces, those other toolkits or
+ applications can be used with tools such as screen readers, magnifiers, and
+ other alternative input devices.
+ .
+ These are the development files for ATK, needed for compilation of
+ programs or toolkits which use it.
+
+Package: libc6
+Version: 2.5.1-1eglibc27+0m5
+Architecture: armel
+Suggests: locales, glibc-doc
+Conflicts: strace (<< 4.0-0), libnss-db (<= 2.2-6.1.1), timezone, timezones, gconv-modules, libtricks, libc6-doc, netkit-rpc, wine (<< 0.0.20031118-1), cyrus-imapd (<< 1.5.19-15), initrd-tools (<< 0.1.79), e2fsprogs (<< 1.35-7), libterm-readline-gnu-perl (<< 1.15-2)
+Replaces: ldso (<= 1.9.11-9), timezone, timezones, gconv-modules, libtricks, netkit-rpc, netbase (<< 4.0)
+Provides: glibc-2.5.1-1eglibc
+Installed-Size: 9000
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Source: glibc
+Priority: required
+Section: libs
+Filename: pool/maemo5.0/free/g/glibc/libc6_2.5.1-1eglibc27+0m5_armel.deb
+Size: 3548182
+MD5sum: 19aa2aef7d43416b7a2ec70ce39bb4bc
+Description: GNU C Library: Shared libraries and Timezone data
+ Contains the standard libraries that are used by nearly all programs on
+ the system. This package includes shared versions of the standard C library
+ and the standard math library, as well as many others.
+ Timezone data is also included.
+
+Package: libc6-dev
+Version: 2.5.1-1eglibc27+0m5
+Architecture: armel
+Depends: libc6 (= 2.5.1-1eglibc27+0m5), linux-kernel-headers
+Recommends: gcc | c-compiler
+Suggests: glibc-doc, manpages-dev
+Conflicts: libstdc++2.10-dev (<< 1:2.95.2-15), gcc-2.95 (<< 1:2.95.3-8), netkit-rpc, libc-dev
+Replaces: man-db (<= 2.3.10-41), gettext (<= 0.10.26-1), ppp (<= 2.2.0f-24), libgdbmg1-dev (<= 1.7.3-24), ldso (<= 1.9.11-9), netkit-rpc, netbase (<< 4.0), kerberos4kth-dev (<< 1.2.2-10), libc6-prof (<< 2.3.5-2)
+Provides: libc-dev
+Installed-Size: 7440
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Source: glibc
+Priority: standard
+Section: libdevel
+Filename: pool/maemo5.0/free/g/glibc/libc6-dev_2.5.1-1eglibc27+0m5_armel.deb
+Size: 1833604
+MD5sum: a61c7b9f8f6c73c0eb01e386b481b5f1
+Description: GNU C Library: Development Libraries and Header Files
+ Contains the symlinks, headers, and object files needed to compile
+ and link programs which use the standard C library.
+
+Package: libcairo2
+Version: 1.8.8-0maemo1+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libfontconfig1 (>= 2.6.0), libfreetype6 (>= 2.3.9), libgcc1 (>= 1:4.2.1), libpixman-1-0 (>= 0.13.2), libpng12-0 (>= 1.2.13-4), libx11-6, libxrender1, zlib1g (>= 1:1.2.1)
+Conflicts: libcairo1
+Replaces: libcairo0.5.1, libcairo0.6.0, libcairo0.9.0, libcairo1
+Provides: libcairo
+Installed-Size: 728
+Maintainer: Kimmo Hämäläinen <kimmo.hamalainen@nokia.com>
+Source: cairo
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/c/cairo/libcairo2_1.8.8-0maemo1+0m5_armel.deb
+Size: 469260
+MD5sum: 72b099cb98e701a65567dc4966803ace
+Description: The Cairo 2D vector graphics library
+ Cairo is a multi-platform library providing anti-aliased
+ vector-based rendering for multiple target backends. Paths consist
+ of line segments and cubic splines and can be rendered at any width
+ with various join and cap styles. All colors may be specified with
+ optional translucence (opacity/alpha) and combined using the
+ extended Porter/Duff compositing algebra as found in the X Render
+ Extension.
+ .
+ Cairo exports a stateful rendering API similar in spirit to the path
+ construction, text, and painting operators of PostScript, (with the
+ significant addition of translucence in the imaging model). When
+ complete, the API is intended to support the complete imaging model of
+ PDF 1.4.
+ .
+ This package contains the shared libraries.
+
+Package: libcairo2-dev
+Version: 1.8.8-0maemo1+0m5
+Architecture: armel
+Depends: libcairo2 (= 1.8.8-0maemo1+0m5), libfontconfig1-dev, libfreetype6-dev (>= 2.1.10), libxrender-dev (>= 0.6.0), libpng12-dev, libsm-dev, libpixman-1-dev (>= 0.10.0), libxcb1-dev, libxcb-render0-dev
+Suggests: libcairo2-doc
+Conflicts: libcairo-dev, libcairo0.5.1-dev, libcairo0.6.0-dev, libcairo0.9.0-dev
+Replaces: libcairo0.5.1-dev, libcairo0.6.0-dev, libcairo0.9.0-dev
+Provides: libcairo-dev
+Installed-Size: 1156
+Maintainer: Kimmo Hämäläinen <kimmo.hamalainen@nokia.com>
+Source: cairo
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/c/cairo/libcairo2-dev_1.8.8-0maemo1+0m5_armel.deb
+Size: 554738
+MD5sum: ec20c60d53e40dd514fd400875d121ec
+Description: Development files for the Cairo 2D graphics library
+ Cairo is a multi-platform library providing anti-aliased
+ vector-based rendering for multiple target backends.
+ .
+ This package contains the development libraries, header files needed by
+ programs that want to compile with Cairo.
+
+Package: libcanberra-dev
+Version: 0.14-0maemo5+0m5
+Architecture: armel
+Depends: libcanberra0 (= 0.14-0maemo5+0m5)
+Installed-Size: 68
+Maintainer: Maemo Multimedia <multimedia@maemo.org>
+Source: libcanberra
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/libc/libcanberra/libcanberra-dev_0.14-0maemo5+0m5_armel.deb
+Size: 11596
+MD5sum: 3c71fba205a2e3cf52dd214e71908884
+Description: a simple abstract interface for playing event sounds
+ libcanberra defines a simple abstract interface for playing event
+ sounds.
+ .
+ This package contains headers and libraries for developing
+ applications that play event sounds with libcanberra.
+
+Package: libcanberra0
+Version: 0.14-0maemo5+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libglib2.0-0 (>= 2.20.0), libgstreamer0.10-0 (>= 0.10.25), libltdl7 (>= 2.2.6a), libpulse0 (>= 0.9.15~test5), libxml2 (>= 2.6.32)
+Suggests: libcanberra-gtk0
+Installed-Size: 168
+Maintainer: Maemo Multimedia <multimedia@maemo.org>
+Source: libcanberra
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libc/libcanberra/libcanberra0_0.14-0maemo5+0m5_armel.deb
+Size: 47718
+MD5sum: aef42bab50d0945939f7a6c3175bdd62
+Description: a simple abstract interface for playing event sounds
+ libcanberra defines a simple abstract interface for playing event
+ sounds.
+ .
+ libcanberra relies on the XDG sound naming specification for
+ identifying event sounds. On Unix/Linux the right sound to play
+ is found via the mechanisms defined in the XDG sound theming
+ specification.
+
+Package: libdbus-1-3
+Version: 1.2.14-0maemo4+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1)
+Recommends: dbus
+Conflicts: dbus (<< 0.60)
+Installed-Size: 300
+Maintainer: Janne Karhunen <janne.karhunen@nokia.com>
+Source: dbus
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/d/dbus/libdbus-1-3_1.2.14-0maemo4+0m5_armel.deb
+Size: 124406
+MD5sum: 1e40cb57231ac1633aa2a63574c71eae
+Description: simple interprocess messaging system
+ D-Bus is a message bus, used for sending messages between applications.
+ Conceptually, it fits somewhere in between raw sockets and CORBA in
+ terms of complexity.
+ .
+ D-Bus supports broadcast messages, asynchronous messages (thus
+ decreasing latency), authentication, and more. It is designed to be
+ low-overhead; messages are sent using a binary protocol, not using
+ XML. D-Bus also supports a method call mapping for its messages, but
+ it is not required; this makes using the system quite simple.
+ .
+ It comes with several bindings, including GLib, Python, Qt and Java.
+ .
+ The daemon can be found in the dbus package.
+
+Package: libdbus-1-dev
+Version: 1.2.14-0maemo4+0m5
+Architecture: armel
+Depends: libdbus-1-3 (= 1.2.14-0maemo4+0m5), pkg-config
+Conflicts: dbus-1-dev
+Replaces: libdbus0-dev, dbus-1-dev
+Installed-Size: 812
+Maintainer: Janne Karhunen <janne.karhunen@nokia.com>
+Source: dbus
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/d/dbus/libdbus-1-dev_1.2.14-0maemo4+0m5_armel.deb
+Size: 222626
+MD5sum: c48f1f0f3248d41f0d299c7fc15dea65
+Description: simple interprocess messaging system (development headers)
+ D-Bus is a message bus, used for sending messages between applications.
+ Conceptually, it fits somewhere in between raw sockets and CORBA in
+ terms of complexity.
+ .
+ See the dbus description for more information about D-Bus in general.
+
+Package: libdbus-glib-1-2
+Version: 0.78-0maemo9+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libdbus-1-3 (>= 1.1.4), libglib2.0-0 (>= 2.20.0)
+Installed-Size: 272
+Maintainer: Janne Karhunen <Janne.Karhunen@nokia.com>
+Source: dbus-glib
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/d/dbus-glib/libdbus-glib-1-2_0.78-0maemo9+0m5_armel.deb
+Size: 146106
+MD5sum: 24924ba710e48e3da04c6b38735ec75f
+Description: simple interprocess messaging system (GLib-based shared library)
+ D-Bus is a message bus, used for sending messages between applications.
+ Conceptually, it fits somewhere in between raw sockets and CORBA in
+ terms of complexity.
+ .
+ This package provides the GLib-based shared library for applications using the
+ GLib interface to D-Bus.
+ .
+ See the dbus description for more information about D-Bus in general.
+
+Package: libdbus-glib-1-dev
+Version: 0.78-0maemo9+0m5
+Architecture: armel
+Depends: libdbus-glib-1-2 (= 0.78-0maemo9+0m5), libdbus-1-dev (>= 0.91), libglib2.0-dev, libc6 (>= 2.5.0-1), libdbus-1-3 (>= 1.1.4), libdbus-glib-1-2 (>= 0.76), libexpat1 (>= 1.95.8), libglib2.0-0 (>= 2.20.0)
+Conflicts: libdbus-glib-dev, dbus-glib-1-dev, dbus-1-utils (<< 0.50-2)
+Replaces: libdbus-glib0-dev, dbus-glib-1-dev, libdbus-1-dev (<< 0.90)
+Installed-Size: 468
+Maintainer: Janne Karhunen <Janne.Karhunen@nokia.com>
+Source: dbus-glib
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/d/dbus-glib/libdbus-glib-1-dev_0.78-0maemo9+0m5_armel.deb
+Size: 193204
+MD5sum: c591b45019d366415e3419ef127730a6
+Description: simple interprocess messaging system (GLib interface)
+ D-Bus is a message bus, used for sending messages between applications.
+ Conceptually, it fits somewhere in between raw sockets and CORBA in
+ terms of complexity.
+ .
+ This package provides a GLib-style interface to D-Bus.
+ .
+ See the dbus description for more information about D-Bus in general.
+
+Package: libexpat1
+Version: 1.95.8-5maemo1+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1)
+Installed-Size: 180
+Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+Source: expat
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/e/expat/libexpat1_1.95.8-5maemo1+0m5_armel.deb
+Size: 58766
+MD5sum: 99cf0d12dfdba2a952b763063627f9c8
+Description: XML parsing C library - runtime library
+ This package contains the runtime, shared library of expat, the C
+ library for parsing XML.
+
+Package: libexpat1-dev
+Version: 1.95.8-5maemo1+0m5
+Architecture: armel
+Depends: libexpat1 (= 1.95.8-5maemo1+0m5), libc6-dev | libc-dev
+Conflicts: libexpat-dev
+Provides: libexpat-dev
+Installed-Size: 440
+Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+Source: expat
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/e/expat/libexpat1-dev_1.95.8-5maemo1+0m5_armel.deb
+Size: 130050
+MD5sum: d6a5343634462c9c686f99dcadfc2b79
+Description: XML parsing C library - development kit
+ This package contains the header file and development libraries of
+ expat, the C library for parsing XML.  Expat is a stream oriented XML
+ parser.  This means that you register handlers with the parser prior
+ to starting the parse.  These handlers are called when the parser
+ discovers the associated structures in the document being parsed.  A
+ start tag is an example of the kind of structures for which you may
+ register handlers.
+
+Package: libfontconfig1
+Version: 2.6.0-1osso1+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libexpat1 (>= 1.95.8), libfreetype6 (>= 2.3.9), zlib1g (>= 1:1.2.1)
+Installed-Size: 216
+Maintainer: Richard Sun <richard.sun@nokia.com>
+Source: fontconfig
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/f/fontconfig/libfontconfig1_2.6.0-1osso1+0m5_armel.deb
+Size: 87754
+MD5sum: 7f0a7adbd311caf44a9bb46582bfaa27
+Description: generic font configuration library (shared library)
+ Fontconfig is a font configuration and customization library, which
+ does not depend on the X Window System.  It is designed to locate
+ fonts within the system and select them according to requirements
+ specified by applications.
+
+Package: libfontconfig1-dev
+Version: 2.6.0-1osso1+0m5
+Architecture: all
+Depends: libfontconfig1 (= 2.6.0-1osso1+0m5), libfreetype6-dev (>= 2.1.9-1osso), libexpat1-dev
+Installed-Size: 1896
+Maintainer: Richard Sun <richard.sun@nokia.com>
+Source: fontconfig
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/f/fontconfig/libfontconfig1-dev_2.6.0-1osso1+0m5_all.deb
+Size: 506544
+MD5sum: 8beab8ec8fee5488f0a6cc6c5cfd762e
+Description: Development package for Fontconfig.
+ Headers and documentation.
+
+Package: libfreetype6
+Version: 2.3.9-1osso2+0m5
+Architecture: armel
+Depends: zlib1g
+Installed-Size: 480
+Maintainer: Richard Sun <richard.sun@nokia.com>
+Source: freetype
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/f/freetype/libfreetype6_2.3.9-1osso2+0m5_armel.deb
+Size: 240500
+MD5sum: 72bfc8cd059418b2f8f53eb02ee0e4cc
+Description: FreeType 2 font engine, shared library files
+ The FreeType project is a team of volunteers who develop free,
+ portable and high-quality software solutions for digital typography.
+ They specifically target embedded systems and focus on bringing small,
+ efficient and ubiquitous products.
+
+Package: libfreetype6-dev
+Version: 2.3.9-1osso2+0m5
+Architecture: armel
+Depends: libfreetype6 (= 2.3.9-1osso2+0m5), zlib1g-dev
+Installed-Size: 1160
+Maintainer: Richard Sun <richard.sun@nokia.com>
+Source: freetype
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/f/freetype/libfreetype6-dev_2.3.9-1osso2+0m5_armel.deb
+Size: 147902
+MD5sum: 9c81b022b1b611f3b171300d8bb5bd76
+Description: Development package for Freetype2.
+
+Package: libgcc1
+Version: 1:4.2.1-4maemo13+0m5
+Architecture: armel
+Depends: gcc-4.2-base (= 4.2.1-4maemo13+0m5), libc6 (>= 2.5.0-1)
+Installed-Size: 72
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Source: gcc-4.2 (4.2.1-4maemo13+0m5)
+Priority: required
+Section: libs
+Filename: pool/maemo5.0/free/g/gcc-4.2/libgcc1_4.2.1-4maemo13+0m5_armel.deb
+Size: 21272
+MD5sum: 844dbcc1e9d8ecbdace3a48bf58f793a
+Description: GCC support library
+ Shared version of the support library, a library of internal subroutines
+ that GCC uses to overcome shortcomings of particular machines, or
+ special needs for some languages.
+
+Package: libgconf2-6
+Version: 2.16.0-2osso6.3+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libdbus-1-3 (>= 1.1.4), libdbus-glib-1-2 (>= 0.76), libglib2.0-0 (>= 2.20.0), libxml2 (>= 2.6.32), gconf2 (>= 2.16.0-2osso6.3+0m5)
+Conflicts: libgconf2-2 (= 1.1.7-1), libgconf2-4 (<< 1.1.10-2)
+Replaces: libgconf2-2 (= 1.1.7-1), libgconf2-4 (<< 1.1.10-2)
+Installed-Size: 340
+Maintainer: Kimmo Hämäläinen <kimmo.hamalainen@nokia.com>
+Source: gconf2
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/g/gconf2/libgconf2-6_2.16.0-2osso6.3+0m5_armel.deb
+Size: 163818
+MD5sum: e384a45c7b40628e999ed5c308dbe412
+Description: GNOME configuration database system libraries (for GNOME2)
+ GConf is a configuration database system, functionally similar to the
+ Windows registry but lots better. :-) It's being written for the GNOME
+ desktop but does not require GNOME.
+ .
+ This package contains shared libraries for GNOME2
+
+Package: libgconf2-dev
+Version: 2.16.0-2osso6.3+0m5
+Architecture: armel
+Depends: libgconf2-6 (= 2.16.0-2osso6.3+0m5), libglib2.0-dev, libpopt-dev, libdbus-glib-1-dev (>= 0.60), gconf2 (>= 2.16.0-2osso6.3+0m5)
+Installed-Size: 396
+Maintainer: Kimmo Hämäläinen <kimmo.hamalainen@nokia.com>
+Source: gconf2
+Priority: optional
+Section: devel
+Filename: pool/maemo5.0/free/g/gconf2/libgconf2-dev_2.16.0-2osso6.3+0m5_armel.deb
+Size: 148104
+MD5sum: 61d4d2ed31eaad54dfa725786e983461
+Description: GNOME configuration database system development files. (for GNOME2)
+ GConf is a configuration database system, functionally similar to the
+ Windows registry but lots better. :-) It's being written for the GNOME
+ desktop but does not require GNOME
+ .
+ This package contains development files for GNOME2
+
+Package: libgdbm3
+Version: 1.8.3-2maemo3+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1)
+Installed-Size: 96
+Maintainer: Juha Kallioinen <juha.kallioinen@nokia.com>
+Source: gdbm
+Priority: standard
+Section: base
+Filename: pool/maemo5.0/free/g/gdbm/libgdbm3_1.8.3-2maemo3+0m5_armel.deb
+Size: 31064
+MD5sum: 7fed4ed97054dc03bc88c5da9802762a
+Description: GNU dbm database routines (runtime version)
+ GNU dbm ('gdbm') is a library of database functions that use extendible
+ hashing and works similarly to the standard UNIX 'dbm' functions.
+ .
+ The basic use of 'gdbm' is to store key/data pairs in a data file, thus
+ providing a persistent version of the 'dictionary' Abstract Data Type
+ ('hash' to perl programmers).
+
+Package: libglib2.0-0
+Version: 2.20.3-1maemo5+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1)
+Recommends: libglib2.0-data, shared-mime-info
+Conflicts: libpango1.0-0 (<< 1.11)
+Installed-Size: 1600
+Maintainer: Janne Karhunen <Janne.Karhunen@nokia.com>
+Source: glib2.0
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/g/glib2.0/libglib2.0-0_2.20.3-1maemo5+0m5_armel.deb
+Size: 640348
+MD5sum: 493e65b8e43ce99606fc97d7ec984111
+Description: The GLib library of C routines
+ GLib is a library containing many useful C routines for things such
+ as trees, hashes, lists, and strings.  It is a useful general-purpose
+ C library used by projects such as GTK+, GIMP, and GNOME.
+ .
+ This package contains the shared libraries.
+
+Package: libglib2.0-dev
+Version: 2.20.3-1maemo5+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libglib2.0-0 (= 2.20.3-1maemo5+0m5), pkg-config (>= 0.14.0)
+Recommends: python
+Suggests: libglib2.0-doc
+Conflicts: libglib1.3-dev
+Replaces: libglib1.3-dev
+Installed-Size: 1400
+Maintainer: Janne Karhunen <Janne.Karhunen@nokia.com>
+Source: glib2.0
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/g/glib2.0/libglib2.0-dev_2.20.3-1maemo5+0m5_armel.deb
+Size: 206092
+MD5sum: 040fbcee9cdcd4e0526ee99e49f1167c
+Description: Development files for the GLib library
+ GLib is a library containing many useful C routines for things such
+ as trees, hashes, lists, and strings.  It is a useful general-purpose
+ C library used by projects such as GTK+, GIMP, and GNOME.
+ .
+ This package is needed to compile programs against libglib2.0-0,
+ as only it includes the header files and static libraries (optionally)
+ needed for compiling.
+
+Package: libgstreamer0.10-0
+Version: 0.10.25-0maemo4+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libglib2.0-0 (>= 2.20.0), libxml2 (>= 2.6.32)
+Suggests: gstreamer0.10-tools, gstreamer0.10-plugins
+Conflicts: libgstreamer-plugins-base0.10-0 (<< 0.10.11cvs20070110-0ubuntu5)
+Installed-Size: 1568
+Maintainer: Maemo Multimedia <multimedia@maemo.org>
+Source: gstreamer0.10
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/g/gstreamer0.10/libgstreamer0.10-0_0.10.25-0maemo4+0m5_armel.deb
+Size: 865858
+MD5sum: bfd4108d7e239d728e7212b8a320b9f5
+Description: Core GStreamer libraries and elements
+ GStreamer is a streaming media framework, based on graphs of filters
+ which operate on media data.  Applications using this library can do
+ anything from real-time sound processing to playing videos, and just
+ about anything else media-related.  Its plugin-based architecture means
+ that new data types or processing capabilities can be added simply by
+ installing new plug-ins.
+ .
+ This package contains the core library and elements.
+Original-Uploaders: David I. Lehn <dlehn@debian.org>,
+           Loic Minier <lool@dooz.org>,
+           Sebastien Bacher <seb128@debian.org>,
+           Sebastian Dröge <slomo@debian.org>,
+           Sjoerd Simons <sjoerd@debian.org>
+Xsbc-Original-Maintainer: Maintainers of GStreamer packages <pkg-gstreamer-maintainers@lists.alioth.debian.org>
+
+Package: libgtk2.0-0
+Version: 2:2.14.7-1maemo33+0m5
+Architecture: armel
+Depends: libgtk2.0-common (>= 2:2.14.7-1maemo33+0m5), libgtk2.0-bin (>= 2:2.14.7-1maemo33+0m5), gtk20-l10n, libatk1.0-0 (>= 1.24.0), libc6 (>= 2.5.0-1), libcairo2, libfontconfig1 (>= 2.6.0), libfreetype6 (>= 2.3.9), libglib2.0-0 (>= 2.20.0), libjpeg62, libpango1.0-0, libpng12-0 (>= 1.2.13-4), libtiff4, libx11-6, libxcomposite1 (>= 1:0.3-1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3 (>= 1:4.0.1), libxi6, libxrandr2 (>= 2:1.2.0), libxrender1, libxtst6
+Conflicts: libgtk2.0-0png3, eog2 (<< 1.0.1-4), gnome-panel2 (<< 2.0.4-1), celestia (<< 1.2.4-4), gimp1.3 (<< 1.3.7-1.1), metatheme (<< 0.9.7-3), libgnomeui-0 (<< 2.0.6-2), gtk2.0-examples (<< 2.2.0), libgdkxft0, gtk2-engines-wonderland (<= 1.0-2), gtk2-engines-cleanice (<= 1.2.8-1), gtk2-engines-thinice (<< 2.6), gtk2-engines-crux (<< 2.6), gtk2-engines-mist (<< 2.6), gtk2-engines-highcontrast (<< 2.6), gtk2-engines-lighthouseblue (<< 2.6), gnome-themes (<< 2.6), gtk2-engines-industrial (<< 0.2.32-5), gtk2-engines-pixbuf (<< 2.2.0-2.1), gtk2-engines-redmond95 (<< 2.2.0-2.1), gtk2-engines-metal (<< 2.2.0-2.1), gtk2-engines-magicchicken (<= 1.1.1-4), gtk2-engines-qtpixmap (<= 0.28-1), gtk2-engines-smooth (<< 0.5.6-3), gtk2-engines-xfce (<= 2.1.8-1), tamil-gtk2im (<= 2.2-4), imhangul (<< 0.9.9-3), librsvg2-common (<< 2.6.3-1)
+Replaces: libgtk2.0-0png3
+Installed-Size: 5524
+Maintainer: Claudio Saavedra <csaavedra@igalia.com>
+Source: gtk+2.0
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/g/gtk+2.0/libgtk2.0-0_2.14.7-1maemo33+0m5_armel.deb
+Size: 2881512
+MD5sum: f6961fa2e440c3800b9fc08a13b0e065
+Description: The GTK+ graphical user interface library
+ The GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, the GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the shared libraries.
+
+Package: libgtk2.0-bin
+Version: 2:2.14.7-1maemo33+0m5
+Architecture: armel
+Depends: libatk1.0-0 (>= 1.24.0), libc6 (>= 2.5.0-1), libcairo2, libfontconfig1 (>= 2.6.0), libfreetype6 (>= 2.3.9), libglib2.0-0 (>= 2.20.0), libgtk2.0-0 (>= 2:2.12.9-0osso1), libpango1.0-0, libpixman-1-0 (>= 0.15.16), libpng12-0 (>= 1.2.13-4), libx11-6, libxcomposite1 (>= 1:0.3-1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3 (>= 1:4.0.1), libxi6, libxrandr2 (>= 2:1.2.0), libxrender1, libxtst6, zlib1g (>= 1:1.2.1)
+Conflicts: libgtk2.0-dev (<= 2.4.3-1)
+Replaces: libgtk2.0-common (<= 2.4.0-3), libgtk2.0-dev (<= 2.4.3-1)
+Installed-Size: 128
+Maintainer: Claudio Saavedra <csaavedra@igalia.com>
+Source: gtk+2.0
+Priority: optional
+Section: misc
+Filename: pool/maemo5.0/free/g/gtk+2.0/libgtk2.0-bin_2.14.7-1maemo33+0m5_armel.deb
+Size: 15412
+MD5sum: e50b9bf48b5d55ad7ca3790f310f3047
+Description: The programs for the GTK+ graphical user interface library
+ The GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, the GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the program files which is used for the libraries
+ and others.
+
+Package: libgtk2.0-common
+Version: 2:2.14.7-1maemo33+0m5
+Architecture: all
+Depends: libgtk2.0-0
+Conflicts: libgtk1.3-common, libgtk2.0-data
+Replaces: libgtk1.3-common, libgtk2.0-data
+Installed-Size: 60
+Maintainer: Claudio Saavedra <csaavedra@igalia.com>
+Source: gtk+2.0
+Priority: optional
+Section: misc
+Filename: pool/maemo5.0/free/g/gtk+2.0/libgtk2.0-common_2.14.7-1maemo33+0m5_all.deb
+Size: 2482
+MD5sum: e4c37836906156b217a5988fff1ef60b
+Description: Common files for the GTK+ graphical user interface library
+ The GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, the GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the common files which the libraries need.
+
+Package: libgtk2.0-dev
+Version: 2:2.14.7-1maemo33+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libglib2.0-0 (>= 2.20.0), libgtk2.0-0 (>= 2:2.12.9-0osso1), libgtk2.0-0 (= 2:2.14.7-1maemo33+0m5), libglib2.0-dev (>= 2.12.0), libpango1.0-dev (>= 1.12.0), libatk1.0-dev (>= 1.9.0), libcairo2-dev (>= 1.2.0), libx11-dev, libxext-dev, pkg-config
+Suggests: libgtk2.0-doc
+Conflicts: libgtk1.3-dev
+Replaces: libgtk1.3-dev
+Installed-Size: 2096
+Maintainer: Claudio Saavedra <csaavedra@igalia.com>
+Source: gtk+2.0
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/g/gtk+2.0/libgtk2.0-dev_2.14.7-1maemo33+0m5_armel.deb
+Size: 254272
+MD5sum: ef21622dd10d4565f1d456d87e1fbcd8
+Description: Development files for the GTK+ library
+ The GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, the GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the header files and static libraries which is
+ needed for developing the GTK+ applications.
+
+Package: libhildon1
+Version: 2.2.23-1+0m5
+Architecture: armel
+Depends: libatk1.0-0 (>= 1.24.0), libc6 (>= 2.5.0-1), libcairo2, libcanberra0 (>= 0.10), libdbus-1-3 (>= 1.1.4), libdbus-glib-1-2 (>= 0.76), libfontconfig1 (>= 2.6.0), libfreetype6 (>= 2.3.9), libgconf2-6 (>= 2.13.5), libglib2.0-0 (>= 2.20.0), libgtk2.0-0 (>= 2:2.12.9-0osso1), libpango1.0-0, osso-sounds-ui, hildon-libs-l10n-mr | hildon-libs-l10n-mr0, osso-system-lock-l10n-mr | osso-system-lock-l10n-mr0, hildon-fm-l10n-mr | hildon-fm-l10n-mr0
+Installed-Size: 532
+Maintainer: Claudio Saavedra <csaavedra@igalia.com>
+Source: libhildon
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libh/libhildon/libhildon1_2.2.23-1+0m5_armel.deb
+Size: 210100
+MD5sum: 56b439aa8d06112b729d06cc20511b51
+Description: Hildon libraries
+
+Package: libhildon1-dev
+Version: 2.2.23-1+0m5
+Architecture: armel
+Depends: libhildon1 (= 2.2.23-1+0m5), pkg-config, libgtk2.0-dev (>= 2:2.12.12-1maemo12), libgconf2-dev, libcanberra-dev
+Installed-Size: 460
+Maintainer: Claudio Saavedra <csaavedra@igalia.com>
+Source: libhildon
+Priority: optional
+Section: devel
+Filename: pool/maemo5.0/free/libh/libhildon/libhildon1-dev_2.2.23-1+0m5_armel.deb
+Size: 66696
+MD5sum: 5e4c5480330b5d8355bb8567ae2b4ffd
+Description: Hildon libraries development files
+
+Package: libice-dev
+Version: 2:1.0.4-1
+Architecture: armel
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libice6 (= 2:1.0.4-1), x11proto-core-dev
+Installed-Size: 220
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libice
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/libi/libice/libice-dev_1.0.4-1_armel.deb
+Size: 56158
+MD5sum: 20dfc930f8b1064d54ea7cd346a6794c
+Description: X11 Inter-Client Exchange library (development headers)
+ This package provides the main interface to the X11 Inter-Client Exchange
+ library, which allows for communication of data between X clients.
+ .
+ This package contains the development headers for the library found in libice6.
+ Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+
+Package: libice6
+Version: 2:1.0.4-1
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), x11-common
+Installed-Size: 136
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libice
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libi/libice/libice6_1.0.4-1_armel.deb
+Size: 45802
+MD5sum: d57981a4cf66d46a8231c8026c8460ec
+Description: X11 Inter-Client Exchange library
+ This package provides the main interface to the X11 Inter-Client Exchange
+ library, which allows for communication of data between X clients.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+
+Package: libltdl7
+Version: 2.2.6a-1~maemo2
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1)
+Installed-Size: 380
+Maintainer: Maemo Multimedia <multimedia@maemo.org>
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libl/libltdl7/libltdl7_2.2.6a-1~maemo2_armel.deb
+Size: 293318
+MD5sum: 9934b4681ea02a5e121760ccfcbae286
+Description: A system independent dlopen wrapper for GNU libtool
+ This package contains the run-time libltdl library.
+ .
+ A small library that aims at hiding the various difficulties of
+ dlopening libraries from programmers.  It is a system independent
+ dlopen wrapper for GNU libtool.
+ .
+ It supports the following dlopen interfaces:
+   * dlopen (Solaris, Linux and various BSD flavors)
+   * shl_load (HP-UX)
+   * LoadLibrary (Win16 and Win32)
+   * load_add_on (BeOS)
+   * GNU DLD (emulates dynamic linking for static libraries)
+   * libtool's dlpreopen
+Xsbc-Original-Maintainer: Kurt Roeckx <kurt@roeckx.be>
+
+Package: libncurses5
+Version: 5.7+20081213-1.maemo1+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1)
+Installed-Size: 548
+Maintainer: Daniel Jacobowitz <ncurses-maint@debian.org>
+Source: ncurses
+Priority: required
+Section: base
+Filename: pool/maemo5.0/free/n/ncurses/libncurses5_5.7+20081213-1.maemo1+0m5_armel.deb
+Size: 317798
+MD5sum: d8c1b1367f73864d29a1d665cce91f5d
+Description: Shared libraries for terminal handling
+ This package contains the shared libraries necessary to run programs
+ compiled with ncurses.
+
+Package: libncurses5-dev
+Version: 5.7+20081213-1.maemo1+0m5
+Architecture: armel
+Depends: libncurses5 (= 5.7+20081213-1.maemo1+0m5), libc-dev
+Conflicts: ncurses-dev, ncurses-developer, libncurses-dev
+Replaces: ncurses-dev, ncurses-developer, libncurses-dev
+Provides: libncurses-dev, ncurses-dev
+Installed-Size: 6016
+Maintainer: Daniel Jacobowitz <ncurses-maint@debian.org>
+Source: ncurses
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/n/ncurses/libncurses5-dev_5.7+20081213-1.maemo1+0m5_armel.deb
+Size: 1244886
+MD5sum: 2af53bfa1a1bf85fe8ab6768eb2e89aa
+Description: Developer's libraries and docs for ncurses
+ This package contains the header files, static libraries
+ and symbolic links that developers using ncurses will need.
+ It also includes the libraries' man pages and other documentation.
+
+Package: libncursesw5
+Version: 5.7+20081213-1.maemo1+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1)
+Installed-Size: 584
+Maintainer: Daniel Jacobowitz <ncurses-maint@debian.org>
+Source: ncurses
+Priority: standard
+Section: libs
+Filename: pool/maemo5.0/free/n/ncurses/libncursesw5_5.7+20081213-1.maemo1+0m5_armel.deb
+Size: 340856
+MD5sum: 0e355d582a10a816d86f65aa20fdd00d
+Description: Shared libraries for terminal handling (wide character support)
+ This package contains the shared libraries necessary to run programs
+ compiled with ncursesw, which includes support for wide characters.
+
+Package: libncursesw5-dev
+Version: 5.7+20081213-1.maemo1+0m5
+Architecture: armel
+Depends: libncursesw5 (= 5.7+20081213-1.maemo1+0m5), libc-dev
+Suggests: libncurses5-dev
+Installed-Size: 1340
+Maintainer: Daniel Jacobowitz <ncurses-maint@debian.org>
+Source: ncurses
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/n/ncurses/libncursesw5-dev_5.7+20081213-1.maemo1+0m5_armel.deb
+Size: 473218
+MD5sum: 1e3a0ae75c8a07d5ac55191db7b4b846
+Description: Developer's libraries for ncursesw
+ This package contains the header files, static libraries
+ and symbolic links that developers using ncursesw will need.
+ .
+ This package includes support for wide characters.
+
+Package: libpango1.0-0
+Version: 1.24.2-0maemo4+0m5
+Architecture: armel
+Depends: libpango1.0-common (>= 1.24.2-0maemo4+0m5), libc6 (>= 2.5.0-1), libcairo2, libfontconfig1 (>= 2.6.0), libfreetype6 (>= 2.3.9), libgcc1 (>= 1:4.2.1), libglib2.0-0 (>= 2.20.0), libpixman-1-0 (>= 0.13.2), libpng12-0 (>= 1.2.13-4), libx11-6, libxft2 (>> 2.1.1), libxrender1, zlib1g (>= 1:1.2.1)
+Installed-Size: 748
+Maintainer: Christian Dywan <christian@imendio.com>, Sven Herzberg <sven@lanedo.com>
+Source: pango1.0
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/p/pango1.0/libpango1.0-0_1.24.2-0maemo4+0m5_armel.deb
+Size: 279970
+MD5sum: 69c8f031a0984d9367ba722d708401a4
+Description: Layout and rendering of internationalized text
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. however, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+-2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends
+ .
+ This package contains the shared libraries.
+
+Package: libpango1.0-common
+Version: 1.24.2-0maemo4+0m5
+Architecture: armel
+Depends: debconf, fontconfig (>= 2.1.91), libexpat1
+Recommends: x-ttcidfont-conf
+Suggests: ttf-kochi-gothic, ttf-kochi-mincho, ttf-thryomanes, ttf-baekmuk, ttf-arphic-gbsn00lp, ttf-arphic-bsmi00lp, ttf-arphic-gkai00mp, ttf-arphic-bkai00mp
+Replaces: libpango0, libpango-common (<< 1.0.0)
+Installed-Size: 160
+Maintainer: Christian Dywan <christian@imendio.com>, Sven Herzberg <sven@lanedo.com>
+Source: pango1.0
+Priority: optional
+Section: misc
+Filename: pool/maemo5.0/free/p/pango1.0/libpango1.0-common_1.24.2-0maemo4+0m5_armel.deb
+Size: 32484
+MD5sum: 9091fa54dd949743a0b20e8cbaa3fb18
+Description: Modules and configuration files for the Pango
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. however, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+-2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends
+ .
+ This package contains the Pango modules and the configuration files
+ which Pango needs.
+
+Package: libpango1.0-dev
+Version: 1.24.2-0maemo4+0m5
+Architecture: armel
+Depends: libpango1.0-0 (= 1.24.2-0maemo4+0m5), libglib2.0-dev (>= 2.10.0), libfreetype6-dev (>= 2.1.3), libx11-dev, libxrender-dev, pkg-config, libxft-dev, libfontconfig1-dev (>= 2.1.91)
+Suggests: libpango1.0-doc
+Conflicts: libpango-dev
+Replaces: libpango-dev
+Installed-Size: 296
+Maintainer: Christian Dywan <christian@imendio.com>, Sven Herzberg <sven@lanedo.com>
+Source: pango1.0
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/p/pango1.0/libpango1.0-dev_1.24.2-0maemo4+0m5_armel.deb
+Size: 35780
+MD5sum: 51a77c83e0a817fc9167fba01a4571ae
+Description: Development files for the Pango
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. however, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+-2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends
+ .
+ This package contains the header files and some files needed for development
+ with Pango.
+
+Package: libpixman-1-0
+Version: 0.16.2-5+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1)
+Installed-Size: 392
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: pixman
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/p/pixman/libpixman-1-0_0.16.2-5+0m5_armel.deb
+Size: 142858
+MD5sum: 4b57ca4fdfd32cc92ef143099c6b2d03
+Description: pixel-manipulation library for X and cairo
+ A library for manipulating pixel regions -- a set of Y-X banded
+ rectangles, image compositing using the Porter/Duff model
+ and implicit mask generation for geometric primitives including
+ trapezoids, triangles, and rectangles.
+
+Package: libpixman-1-dev
+Version: 0.16.2-5+0m5
+Architecture: armel
+Depends: libpixman-1-0 (= 0.16.2-5+0m5)
+Conflicts: libpixman1-dev
+Installed-Size: 500
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: pixman
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/p/pixman/libpixman-1-dev_0.16.2-5+0m5_armel.deb
+Size: 160586
+MD5sum: 1f3769683f8f593a4f3bcce1578afb0a
+Description: pixel-manipulation library for X and cairo (development files)
+ Development libraries, header files and documentation needed by
+ programs that want to compile with the Cairo/X pixman library.
+
+Package: libpng12-0
+Version: 1.2.37-1maemo3+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), zlib1g (>= 1:1.2.1)
+Conflicts: libpng12-dev (<= 1.2.8rel-7), mzscheme (<= 1:209-5), pngcrush (<= 1.5.10-2), pngmeta (<= 1.11-3), qemacs (<= 0.3.1-5), povray-3.5 (<= 3.5.0c-10)
+Replaces: libpng12-dev (<= 1.2.8rel-7)
+Installed-Size: 308
+Maintainer: Claudio Saavedra <csaavedra@igalia.com>
+Source: libpng3
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libp/libpng3/libpng12-0_1.2.37-1maemo3+0m5_armel.deb
+Size: 167324
+MD5sum: b103d74e98e4d76f5773dddf9a28160e
+Description: PNG library - runtime
+ libpng is a library implementing an interface for reading and writing
+ PNG (Portable Network Graphics) format files.
+ .
+ This package contains the runtime library files needed to run software
+ using libpng.
+
+Package: libpng12-dev
+Version: 1.2.37-1maemo3+0m5
+Architecture: armel
+Depends: libpng12-0 (= 1.2.37-1maemo3+0m5), zlib1g-dev
+Conflicts: libpng2-dev, libpng-dev, libpng12-0-dev, libpng2 (<< 1.0.12-3)
+Replaces: libpng3-dev (<= 1.2.5), libpng12-0-dev
+Provides: libpng-dev, libpng12-0-dev, libpng3-dev
+Installed-Size: 608
+Maintainer: Claudio Saavedra <csaavedra@igalia.com>
+Source: libpng3
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/libp/libpng3/libpng12-dev_1.2.37-1maemo3+0m5_armel.deb
+Size: 253674
+MD5sum: 4870a1da2fccc435183022e9cf2a28ab
+Description: PNG library - development
+ libpng is a library implementing an interface for reading and writing
+ PNG (Portable Network Graphics) format files.
+ .
+ This package contains the header and development files needed to build
+ programs and packages using libpng.
+
+Package: libpopt-dev
+Version: 1.10-3osso3+0m5
+Architecture: armel
+Depends: libc6-dev | libc-dev, libpopt0 (= 1.10-3osso3+0m5)
+Conflicts: popt
+Replaces: popt
+Installed-Size: 120
+Maintainer: Yauheni Kaliuta <yauheni.kaliuta@nokia.com>
+Source: popt
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/p/popt/libpopt-dev_1.10-3osso3+0m5_armel.deb
+Size: 38112
+MD5sum: a4dff2e513611a7620c0d37e747c3229
+Description: lib for parsing cmdline parameters - development files
+ Popt was heavily influenced by the getopt() and getopt_long() functions,
+ but it allows more powerful argument expansion. It can parse arbitrary
+ argv[] style arrays and automatically set variables based on command
+ line arguments. It also allows command line arguments to be aliased via
+ configuration files and includes utility functions for parsing arbitrary
+ strings into argv[] arrays using shell-like rules.
+ .
+ This package contains the popt static library and header file.
+Original-Maintainer: Paul Martin <pm@debian.org>
+
+Package: libpopt0
+Version: 1.10-3osso3+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1)
+Conflicts: popt, libpopt-dev (<= 1.4-1), rpm (<= 4.0.2-3)
+Replaces: popt
+Installed-Size: 84
+Maintainer: Yauheni Kaliuta <yauheni.kaliuta@nokia.com>
+Source: popt
+Priority: important
+Section: base
+Filename: pool/maemo5.0/free/p/popt/libpopt0_1.10-3osso3+0m5_armel.deb
+Size: 22156
+MD5sum: 46b18ca408902c9f4bc677b8fec305b9
+Description: lib for parsing cmdline parameters
+ Popt was heavily influenced by the getopt() and getopt_long() functions,
+ but it allows more powerful argument expansion. It can parse arbitrary
+ argv[] style arrays and automatically set variables based on command
+ line arguments. It also allows command line arguments to be aliased via
+ configuration files and includes utility functions for parsing arbitrary
+ strings into argv[] arrays using shell-like rules.
+ .
+ This package contains the runtime library and locale data.
+Original-Maintainer: Paul Martin <pm@debian.org>
+
+Package: libpthread-stubs0
+Version: 0.1-2maemo1
+Architecture: armel
+Installed-Size: 36
+Maintainer: XCB Developers <xcb@lists.freedesktop.org>
+Source: libpthread-stubs
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libp/libpthread-stubs/libpthread-stubs0_0.1-2maemo1_armel.deb
+Size: 2878
+MD5sum: b701d09cd5781531ecbb09bc146d9f8e
+Description: pthread stubs not provided by native libc
+ This library provides weak aliases for pthread functions not provided
+ in libc or otherwise available by default.  Libraries like libxcb rely
+ on pthread stubs to use pthreads optionally, becoming thread-safe when
+ linked to libpthread, while avoiding any performance hit when running
+ single-threaded. libpthread-stubs supports this behavior even on
+ platforms which do not supply all the necessary pthread stubs.  On
+ platforms which already supply all the necessary pthread stubs, this
+ package has no content.
+
+Package: libpthread-stubs0-dev
+Version: 0.1-2maemo1
+Architecture: armel
+Depends: libpthread-stubs0 (= 0.1-2maemo1)
+Installed-Size: 48
+Maintainer: XCB Developers <xcb@lists.freedesktop.org>
+Source: libpthread-stubs
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/libp/libpthread-stubs/libpthread-stubs0-dev_0.1-2maemo1_armel.deb
+Size: 3216
+MD5sum: 20059b750875fec35e350fbfe538c198
+Description: pthread stubs not provided by native libc, development files
+ This library provides weak aliases for pthread functions not provided
+ in libc or otherwise available by default.  Libraries like libxcb rely
+ on pthread stubs to use pthreads optionally, becoming thread-safe when
+ linked to libpthread, while avoiding any performance hit when running
+ single-threaded. libpthread-stubs supports this behavior even on
+ platforms which do not supply all the necessary pthread stubs.
+ .
+ On platforms which already supply all the necessary pthread stubs, this
+ package ships only the pkg-config file pthread-stubs.pc, to allow
+ libraries to unconditionally express a dependency on pthread-stubs and
+ still obtain correct behavior.
+
+Package: libpulse0
+Version: 0.9.15-1maemo43+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libdbus-1-3 (>= 1.1.4), libgcc1 (>= 1:4.2.1), libgdbm3
+Suggests: pulseaudio
+Installed-Size: 404
+Maintainer: Maemo Multimedia <multimedia@maemo.org>
+Source: pulseaudio
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/p/pulseaudio/libpulse0_0.9.15-1maemo43+0m5_armel.deb
+Size: 150372
+MD5sum: f8a13e1ea83885681bb69dd56392879e
+Description: PulseAudio client libraries
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ Client libraries used by applications that access a PulseAudio sound server
+ via PulseAudio's native interface.
+Xsbc-Original-Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+
+Package: libreadline5
+Version: 5.2-2maemo2+0m5
+Architecture: armel
+Depends: readline-common, libc6 (>= 2.5.0-1), libncurses5 (>= 5.7-1)
+Installed-Size: 320
+Maintainer: maemo integration <integration@maemo.org>
+Source: readline5
+Priority: important
+Section: libs
+Filename: pool/maemo5.0/free/r/readline5/libreadline5_5.2-2maemo2+0m5_armel.deb
+Size: 130782
+MD5sum: e266bb045b1b34ecbeafc0572a9b30ed
+Description: GNU readline and history libraries, run-time libraries
+ The GNU readline library aids in the consistency of user interface
+ across discrete programs that need to provide a command line
+ interface.
+ .
+ The GNU history library provides a consistent user interface for
+ recalling lines of previously typed input.
+
+Package: libreadline5-dev
+Version: 5.2-2maemo2+0m5
+Architecture: armel
+Depends: libreadline5 (= 5.2-2maemo2+0m5), libncurses5-dev
+Conflicts: libreadline-dev
+Provides: libreadline-dev
+Installed-Size: 584
+Maintainer: maemo integration <integration@maemo.org>
+Source: readline5
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/r/readline5/libreadline5-dev_5.2-2maemo2+0m5_armel.deb
+Size: 217226
+MD5sum: e4f6d35e00cbd75261b44decbe98a8b7
+Description: GNU readline and history libraries, development files
+ The GNU readline library aids in the consistency of user interface
+ across discrete programs that need to provide a command line
+ interface.
+ .
+ The GNU history library provides a consistent user interface for
+ recalling lines of previously typed input.
+ .
+ This package contains as well the readline documentation in info format.
+
+Package: libsdl1.2
+Version: 1:1.2.13-2maemo8+0m5
+Architecture: armel
+Depends: libasound2 (>> 1.0.18), libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libpulse0, libpulse0 (>= 0.9.15~test5)
+Installed-Size: 420
+Maintainer: Debian SDL packages maintainers <pkg-sdl-maintainers@lists.alioth.debian.org>
+Priority: extra
+Section: libs
+Filename: pool/maemo5.0/free/libs/libsdl1.2/libsdl1.2_1.2.13-2maemo8+0m5_armel.deb
+Size: 164196
+MD5sum: 988e5d2ab1ba1c613fbcc1ad38f219bd
+Description: Simple DirectMedia Layer (with X11 and PulseAudio options)
+ SDL is a library that allows programs portable low level access to a video
+ framebuffer, audio output, mouse, and keyboard.
+ .
+ This version of SDL is compiled with X11 graphics and PulseAudio sound.
+
+Package: libsdl1.2-dev
+Version: 1:1.2.13-2maemo8+0m5
+Architecture: armel
+Depends: libsdl1.2 (= 1:1.2.13-2maemo8+0m5), libx11-dev
+Installed-Size: 3312
+Maintainer: Debian SDL packages maintainers <pkg-sdl-maintainers@lists.alioth.debian.org>
+Source: libsdl1.2
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/libs/libsdl1.2/libsdl1.2-dev_1.2.13-2maemo8+0m5_armel.deb
+Size: 765520
+MD5sum: bb95d7d9f77e51335dd58b8d878cee8a
+Description: Simple DirectMedia Layer development files
+ SDL is a library that allows programs portable low level access to a video
+ framebuffer, audio output, mouse, and keyboard.
+ .
+ This package contains the files needed to compile and link programs which
+ use SDL.
+
+Package: libsm-dev
+Version: 2:1.0.3-1
+Architecture: armel
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libsm6 (= 2:1.0.3-1), x11proto-core-dev, libice-dev (>= 1:1.0.0-1)
+Installed-Size: 124
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libsm
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/libs/libsm/libsm-dev_1.0.3-1_armel.deb
+Size: 24810
+MD5sum: 0d97df782a0cf60079a02525a5f4aac6
+Description: X11 Inter-Client Exchange library (development headers)
+ This package provides the main interface to the X11 Session Management
+ library, which allows for applications to both manage sessions, and make use
+ of session managers to save and restore their state for later use.
+ .
+ This package contains the development headers for the library found in libsm6.
+ Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+
+Package: libsm6
+Version: 2:1.0.3-1
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libice6 (>= 1:1.0.0), x11-common
+Installed-Size: 84
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libsm
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libs/libsm/libsm6_1.0.3-1_armel.deb
+Size: 21016
+MD5sum: e8c78df59645f720eb0063bcc1d5aa95
+Description: X11 Session Management library
+ This package provides the main interface to the X11 Session Management
+ library, which allows for applications to both manage sessions, and make use
+ of session managers to save and restore their state for later use.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+
+Package: libssl-dev
+Version: 0.9.8n-1+maemo4+0m5
+Architecture: armel
+Depends: libssl0.9.8 (= 0.9.8n-1+maemo4+0m5), zlib1g-dev
+Conflicts: ssleay (<< 0.9.2b), libssl08-dev, libssl09-dev, libssl095a-dev, libssl096-dev
+Installed-Size: 5780
+Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+Source: openssl
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/o/openssl/libssl-dev_0.9.8n-1+maemo4+0m5_armel.deb
+Size: 2133680
+MD5sum: 3a5e7b5dd92374264db62d05a734da2e
+Description: SSL development libraries, header files and documentation
+ libssl and libcrypto development libraries, header files and manpages.
+ .
+ It is part of the OpenSSL implementation of SSL.
+
+Package: libssl0.9.8
+Version: 0.9.8n-1+maemo4+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), zlib1g (>= 1:1.2.1), debconf (>= 0.5) | debconf-2.0
+Conflicts: ssleay (<< 0.9.2b), libssl, openssl (<< 0.9.6-2), libssl096-dev (<< 0.9.6-2)
+Installed-Size: 7060
+Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+Source: openssl
+Priority: important
+Section: libs
+Filename: pool/maemo5.0/free/o/openssl/libssl0.9.8_0.9.8n-1+maemo4+0m5_armel.deb
+Size: 2448800
+MD5sum: d545662f3fd3849e9e4f935a947e1423
+Description: SSL shared libraries
+ libssl and libcrypto shared libraries needed by programs like
+ apache-ssl, telnet-ssl and openssh.
+ .
+ It is part of the OpenSSL implementation of SSL.
+
+Package: libtiff4
+Version: 1:3.8.2-11maemo5+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libjpeg62, zlib1g (>= 1:1.2.1)
+Installed-Size: 440
+Maintainer: Claudio Saavedra <csaavedra@igalia.com>
+Source: tiff
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/t/tiff/libtiff4_3.8.2-11maemo5+0m5_armel.deb
+Size: 158018
+MD5sum: c12dc5217b11210afa50de1e9068a2c0
+Description: Tag Image File Format (TIFF) library
+ libtiff is a library providing support for the Tag Image File Format
+ (TIFF), a widely used format for storing image data.  This package
+ includes the shared library.
+
+Package: libx11-6
+Version: 2:1.1.99.6+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libxau6, libxdmcp6, libx11-data
+Conflicts: xlibs-data (<< 1:7.0.0)
+Installed-Size: 1080
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libx11
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libx/libx11/libx11-6_1.1.99.6+0m5_armel.deb
+Size: 559190
+MD5sum: 844a32312e60a7ec45a6e171de3ff56c
+Description: X11 client-side library
+ This package provides a client interface to the X Window System, otherwise
+ known as 'Xlib'.  It provides a complete API for the basic functions of the
+ window system.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libX11
+
+Package: libx11-data
+Version: 2:1.1.99.6+0m5
+Architecture: all
+Replaces: libx11-6 (<= 2:1.0.0-1)
+Installed-Size: 2116
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libx11
+Priority: optional
+Section: x11
+Filename: pool/maemo5.0/free/libx/libx11/libx11-data_1.1.99.6+0m5_all.deb
+Size: 185980
+MD5sum: 1c3681744ce21e444aef37be9f63e470
+Description: X11 client-side library
+ This package provides the locale data files for libx11.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libX11
+
+Package: libx11-dev
+Version: 2:1.1.99.6+0m5
+Architecture: armel
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libx11-6 (= 2:1.1.99.6+0m5), libxau-dev (>= 1:1.0.0-1), libxdmcp-dev (>= 1:1.0.0-1), x11proto-core-dev (>= 6.8.99.8-1), x11proto-input-dev, x11proto-kb-dev, xtrans-dev, libxcb-xlib0-dev
+Installed-Size: 3480
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libx11
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/libx/libx11/libx11-dev_1.1.99.6+0m5_armel.deb
+Size: 1663550
+MD5sum: 2f98c0059e4a81033f412cfe9ff5fc75
+Description: X11 client-side library (development headers)
+ This package provides a client interface to the X Window System, otherwise
+ known as 'Xlib'.  It provides a complete API for the basic functions of the
+ window system.
+ .
+ This package contains the development headers for the library found in
+ libx11-6. Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libX11
+
+Package: libxau-dev
+Version: 1:1.0.3-2osso1.1
+Architecture: armel
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libxau6 (= 1:1.0.3-2osso1.1), x11proto-core-dev
+Installed-Size: 120
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libxau
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/libx/libxau/libxau-dev_1.0.3-2osso1.1_armel.deb
+Size: 15846
+MD5sum: e36e780aa78cd6f286ef7e70adb98cc6
+Description: X11 authorisation library (development headers)
+ This package provides the main interface to the X11 authorisation handling,
+ which controls authorisation for X connections, both client-side and
+ server-side.
+ .
+ This package contains the development headers for the library found in libxau6.
+ Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+
+Package: libxau6
+Version: 1:1.0.3-2osso1.1
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), x11-common
+Installed-Size: 64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libxau
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libx/libxau/libxau6_1.0.3-2osso1.1_armel.deb
+Size: 11766
+MD5sum: 4e035f760bdda461be56a5049a81dced
+Description: X11 authorisation library
+ This package provides the main interface to the X11 authorisation handling,
+ which controls authorisation for X connections, both client-side and
+ server-side.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+
+Package: libxcb-render0
+Version: 1.1.92-2downgraded
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libxcb1
+Installed-Size: 88
+Maintainer: XCB Developers <xcb@lists.freedesktop.org>
+Source: libxcb
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libx/libxcb/libxcb-render0_1.1.92-2downgraded_armel.deb
+Size: 21542
+MD5sum: fe67d93389ae3cbf69dbc503f095b934
+Description: X C Binding, render extension
+ This package contains the library files needed to run software using
+ libxcb-render, the render extension for the X C Binding.
+ .
+ The XCB library provides an interface to the X Window System protocol,
+ designed to replace the Xlib interface.  XCB provides several advantages over
+ Xlib:
+ .
+  * Size: small library and lower memory footprint
+  * Latency hiding: batch several requests and wait for the replies later
+  * Direct protocol access: one-to-one mapping between interface and protocol
+  * Thread support: access XCB from multiple threads, with no explicit locking
+  * Easy creation of new extensions: automatically generates interface from
+    machine-parsable protocol descriptions
+
+Package: libxcb-render0-dev
+Version: 1.1.92-2downgraded
+Architecture: armel
+Depends: libxcb-render0 (= 1.1.92-2downgraded), libxcb1-dev
+Installed-Size: 248
+Maintainer: XCB Developers <xcb@lists.freedesktop.org>
+Source: libxcb
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/libx/libxcb/libxcb-render0-dev_1.1.92-2downgraded_armel.deb
+Size: 29324
+MD5sum: 7b90845a9a7ef5f52cc92f1ac587b46f
+Description: X C Binding, render extension, development files
+ This package contains the header and library files needed to build software
+ using libxcb-render, the render extension for the X C Binding.
+ .
+ The XCB library provides an interface to the X Window System protocol,
+ designed to replace the Xlib interface.  XCB provides several advantages over
+ Xlib:
+ .
+  * Size: small library and lower memory footprint
+  * Latency hiding: batch several requests and wait for the replies later
+  * Direct protocol access: one-to-one mapping between interface and protocol
+  * Thread support: access XCB from multiple threads, with no explicit locking
+  * Easy creation of new extensions: automatically generates interface from
+    machine-parsable protocol descriptions
+
+Package: libxcb-xlib0
+Version: 1.1.92-2downgraded
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libxcb1
+Installed-Size: 68
+Maintainer: XCB Developers <xcb@lists.freedesktop.org>
+Source: libxcb
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libx/libxcb/libxcb-xlib0_1.1.92-2downgraded_armel.deb
+Size: 15156
+MD5sum: 7d98cfd0afcc16f72886f7d02d715fef
+Description: X C Binding, Xlib/XCB interface library
+ This package contains the library files needed to run software using
+ libxcb-xlib, the Xlib/XCB interface for the X C Binding.  libxcb-xlib contains
+ portions of XCB used only by the Xlib/XCB compatibility layer; nothing other
+ than Xlib should ever link to it.
+ .
+ The XCB library provides an interface to the X Window System protocol,
+ designed to replace the Xlib interface.  XCB provides several advantages over
+ Xlib:
+ .
+  * Size: small library and lower memory footprint
+  * Latency hiding: batch several requests and wait for the replies later
+  * Direct protocol access: one-to-one mapping between interface and protocol
+  * Thread support: access XCB from multiple threads, with no explicit locking
+  * Easy creation of new extensions: automatically generates interface from
+    machine-parsable protocol descriptions
+
+Package: libxcb-xlib0-dev
+Version: 1.1.92-2downgraded
+Architecture: armel
+Depends: libxcb-xlib0 (= 1.1.92-2downgraded), libxcb1-dev
+Installed-Size: 72
+Maintainer: XCB Developers <xcb@lists.freedesktop.org>
+Source: libxcb
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/libx/libxcb/libxcb-xlib0-dev_1.1.92-2downgraded_armel.deb
+Size: 14828
+MD5sum: 1ac0ace48151acaa1675593f302257db
+Description: X C Binding, Xlib/XCB interface library, development files
+ This package contains the header and library files needed to build software
+ using libxcb-xlib, the Xlib/XCB interface for the X C Binding.  libxcb-xlib
+ contains portions of XCB used only by the Xlib/XCB compatibility layer;
+ nothing other than Xlib should ever link to it.
+ .
+ The XCB library provides an interface to the X Window System protocol,
+ designed to replace the Xlib interface.  XCB provides several advantages over
+ Xlib:
+ .
+  * Size: small library and lower memory footprint
+  * Latency hiding: batch several requests and wait for the replies later
+  * Direct protocol access: one-to-one mapping between interface and protocol
+  * Thread support: access XCB from multiple threads, with no explicit locking
+  * Easy creation of new extensions: automatically generates interface from
+    machine-parsable protocol descriptions
+
+Package: libxcb1
+Version: 1.1.92-2downgraded
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libxau6, libxdmcp6
+Installed-Size: 152
+Maintainer: XCB Developers <xcb@lists.freedesktop.org>
+Source: libxcb
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libx/libxcb/libxcb1_1.1.92-2downgraded_armel.deb
+Size: 43158
+MD5sum: f4961a7aeee89995d4a1ebcf031b6b8c
+Description: X C Binding
+ This package contains the library files needed to run software using libxcb,
+ the X C Binding.
+ .
+ The XCB library provides an interface to the X Window System protocol,
+ designed to replace the Xlib interface.  XCB provides several advantages over
+ Xlib:
+ .
+  * Size: small library and lower memory footprint
+  * Latency hiding: batch several requests and wait for the replies later
+  * Direct protocol access: one-to-one mapping between interface and protocol
+  * Thread support: access XCB from multiple threads, with no explicit locking
+  * Easy creation of new extensions: automatically generates interface from
+    machine-parsable protocol descriptions
+
+Package: libxcb1-dev
+Version: 1.1.92-2downgraded
+Architecture: armel
+Depends: libxcb1 (= 1.1.92-2downgraded), libpthread-stubs0-dev, libxau-dev (>= 1:1.0.0-1), libxdmcp-dev (>= 1:1.0.0-1)
+Conflicts: libxcb0-dev
+Replaces: libxcb0-dev
+Installed-Size: 668
+Maintainer: XCB Developers <xcb@lists.freedesktop.org>
+Source: libxcb
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/libx/libxcb/libxcb1-dev_1.1.92-2downgraded_armel.deb
+Size: 81568
+MD5sum: f7ca2a9cc82da51b87215d10388eadda
+Description: X C Binding, development files
+ This package contains the header and library files needed to build software
+ using libxcb, the X C Binding.
+ .
+ The XCB library provides an interface to the X Window System protocol,
+ designed to replace the Xlib interface.  XCB provides several advantages over
+ Xlib:
+ .
+  * Size: small library and lower memory footprint
+  * Latency hiding: batch several requests and wait for the replies later
+  * Direct protocol access: one-to-one mapping between interface and protocol
+  * Thread support: access XCB from multiple threads, with no explicit locking
+  * Easy creation of new extensions: automatically generates interface from
+    machine-parsable protocol descriptions
+
+Package: libxcomposite1
+Version: 1:0.4.0-3+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libx11-6, libxext6, libxfixes3 (>= 1:4.0.1)
+Installed-Size: 52
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libxcomposite
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libx/libxcomposite/libxcomposite1_0.4.0-3+0m5_armel.deb
+Size: 5216
+MD5sum: c68cb7a5aac037e665ed399fe35108c4
+Description: X11 Composite extension library
+ libXcomposite provides an X Window System client interface to the Composite
+ extension to the X protocol.
+ .
+ The Composite extension allows clients called compositing managers to control
+ the final drawing of the screen.  Rendering is done into an off-screen buffer.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXcomposite
+
+Package: libxcursor1
+Version: 1:1.1.9-2+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libx11-6, libxfixes3 (>= 1:4.0.1), libxrender1
+Installed-Size: 80
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libxcursor
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libx/libxcursor/libxcursor1_1.1.9-2+0m5_armel.deb
+Size: 23180
+MD5sum: cfa51b5a0fe57c8c76315a484aa09ff8
+Description: X cursor management library
+ Xcursor is a simple library designed to help locate and load cursors for the
+ X Window System.  Cursors can be loaded from files or memory and can exist in
+ several sizes; the library automatically picks the best size.  When using
+ images loaded from files, Xcursor prefers to use the Render extension's
+ CreateCursor request for rendering cursors.  Where the Render extension is
+ not supported, Xcursor maps the cursor image to a standard X cursor and uses
+ the core X protocol CreateCursor request.
+
+Package: libxdamage1
+Version: 1:1.1.1-3osso1.1
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libx11-6, libxfixes3 (>= 1:4.0.1), x11-common
+Installed-Size: 60
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libxdamage
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libx/libxdamage/libxdamage1_1.1.1-3osso1.1_armel.deb
+Size: 10080
+MD5sum: c2241fd1125f21fb83b13e8af083d1d9
+Description: X11 damaged region extension library
+ libXdamage provides an X Window System client interface to the DAMAGE
+ extension to the X protocol.
+ .
+ The Damage extension provides for notification of when on-screen regions have
+ been 'damaged' (altered).
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXdamage
+
+Package: libxdmcp-dev
+Version: 1:1.0.2-2osso1.1
+Architecture: armel
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libxdmcp6 (= 1:1.0.2-2osso1.1), x11proto-core-dev
+Installed-Size: 124
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libxdmcp
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libx/libxdmcp/libxdmcp-dev_1.0.2-2osso1.1_armel.deb
+Size: 20258
+MD5sum: e4cbabb420574027cf65c657a6660aff
+Description: X11 authorisation library (development headers)
+ This package provides the main interface to the X11 display manager control
+ protocol library, which allows for remote logins to display managers.
+ .
+ This package contains the development headers for the library found in
+ libxdmcp6. Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+
+Package: libxdmcp6
+Version: 1:1.0.2-2osso1.1
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), x11-common (>= 1:7.0.0)
+Installed-Size: 72
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libxdmcp
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libx/libxdmcp/libxdmcp6_1.0.2-2osso1.1_armel.deb
+Size: 16718
+MD5sum: e99d9a1aa6bb3ae4a8bb50728688dcc4
+Description: X11 Display Manager Control Protocol library
+ This package provides the main interface to the X11 display manager control
+ protocol library, which allows for remote logins to display managers.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+
+Package: libxext-dev
+Version: 2:1.0.99.1-0maemo20081209.0
+Architecture: armel
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libxext6 (= 2:1.0.99.1-0maemo20081209.0), x11proto-core-dev, x11proto-xext-dev, libx11-dev
+Installed-Size: 268
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libxext
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/libx/libxext/libxext-dev_1.0.99.1-0maemo20081209.0_armel.deb
+Size: 87892
+MD5sum: 139411433d2928c2b99e8511e333699f
+Description: X11 miscellaneous extensions library (development headers)
+ libXext provides an X Window System client interface to several extensions to
+ the X protocol.
+ .
+ The supported protocol extensions are:
+  - DOUBLE-BUFFER (DBE), the Double Buffer extension;
+  - DPMS, the VESA Display Power Management System extension;
+  - Extended-Visual-Information (EVI), an extension for gathering extra
+    information about the X server's visuals;
+  - LBX, the Low Bandwidth X extension;
+  - MIT-SHM, the MIT X client/server shared memory extension;
+  - MIT-SUNDRY-NONSTANDARD, a miscellaneous extension by MIT;
+  - Multi-Buffering, the multi-buffering and stereo display extension;
+  - SECURITY, the X security extension;
+  - SHAPE, the non-rectangular shaped window extension;
+  - SYNC, the X synchronization extension;
+  - TOG-CUP, the Open Group's Colormap Utilization extension;
+  - XC-APPGROUP, the X Consortium's Application Group extension;
+  - XC-MISC, the X Consortium's resource ID querying extension;
+  - XTEST, the X test extension (this is one of two client-side
+    implementations; the other is in the libXtst library, provided by the
+    libxtst6 package);
+ .
+ libXext also provides a small set of utility functions to aid authors of
+ client APIs for X protocol extensions.
+ .
+ This package contains the development headers for the library found in
+ libxext6. Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXext
+
+Package: libxext6
+Version: 2:1.0.99.1-0maemo20081209.0
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libx11-6, libxau6
+Installed-Size: 128
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libxext
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libx/libxext/libxext6_1.0.99.1-0maemo20081209.0_armel.deb
+Size: 35166
+MD5sum: b81ba75d3509b5af7de3106d47d2c48a
+Description: X11 miscellaneous extension library
+ libXext provides an X Window System client interface to several extensions to
+ the X protocol.
+ .
+ The supported protocol extensions are:
+  - DOUBLE-BUFFER (DBE), the Double Buffer extension;
+  - DPMS, the VESA Display Power Management System extension;
+  - Extended-Visual-Information (EVI), an extension for gathering extra
+    information about the X server's visuals;
+  - LBX, the Low Bandwidth X extension;
+  - MIT-SHM, the MIT X client/server shared memory extension;
+  - MIT-SUNDRY-NONSTANDARD, a miscellaneous extension by MIT;
+  - Multi-Buffering, the multi-buffering and stereo display extension;
+  - SECURITY, the X security extension;
+  - SHAPE, the non-rectangular shaped window extension;
+  - SYNC, the X synchronization extension;
+  - TOG-CUP, the Open Group's Colormap Utilization extension;
+  - XC-APPGROUP, the X Consortium's Application Group extension;
+  - XC-MISC, the X Consortium's resource ID querying extension;
+  - XTEST, the X test extension (this is one of two client-side
+    implementations; the other is in the libXtst library, provided by the
+    libxtst6 package);
+ .
+ libXext also provides a small set of utility functions to aid authors of
+ client APIs for X protocol extensions.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXext
+
+Package: libxfixes3
+Version: 1:4.0.3-2osso1.1
+Architecture: armel
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libc6 (>= 2.5.0-1), libx11-6
+Installed-Size: 64
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libxfixes
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libx/libxfixes/libxfixes3_4.0.3-2osso1.1_armel.deb
+Size: 9848
+MD5sum: 267d9913ce61f2e01bc5c44a6eb02df4
+Description: X11 miscellaneous 'fixes' extension library
+ libXfixes provides an X Window System client interface to the 'XFIXES'
+ extension to the X protocol.
+ .
+ It provides support for Region types, and some cursor functions.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXfixes
+
+Package: libxft-dev
+Version: 2.1.12-2osso2.cs2007q3+0m5
+Architecture: armel
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libxft2 (= 2.1.12-2osso2.cs2007q3+0m5), libc6-dev | libc-dev, libfontconfig1-dev, libfreetype6-dev, libx11-dev (>= 2:1.0.0), libxrender-dev, zlib1g-dev | libz-dev
+Conflicts: libxft2-dev, xlibs-dev (<< 4.3.0)
+Provides: libxft2-dev
+Installed-Size: 212
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: xft
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/x/xft/libxft-dev_2.1.12-2osso2.cs2007q3+0m5_armel.deb
+Size: 62162
+MD5sum: bb384d798a228ab547a8af7491547a89
+Description: FreeType-based font drawing library for X (development files)
+ Xft provides a client-side font API for X applications, making the FreeType
+ font rasterizer available to X clients.  Fontconfig is used for font
+ specification resolution.  Where available, the RENDER extension handles
+ glyph drawing; otherwise, the core X protocol is used.
+ .
+ This package provides a static library and C header files.
+
+Package: libxft2
+Version: 2.1.12-2osso2.cs2007q3+0m5
+Architecture: armel
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libc6 (>= 2.5.0-1), libfontconfig1 (>= 2.6.0), libfreetype6 (>= 2.3.9), libx11-6, libxrender1
+Installed-Size: 124
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: xft
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/x/xft/libxft2_2.1.12-2osso2.cs2007q3+0m5_armel.deb
+Size: 46852
+MD5sum: bd292851a2087c3d9f420e1f8356c1b0
+Description: FreeType-based font drawing library for X
+ Xft provides a client-side font API for X applications, making the FreeType
+ font rasterizer available to X clients.  Fontconfig is used for font
+ specification resolution.  Where available, the RENDER extension handles
+ glyph drawing; otherwise, the core X protocol is used.
+
+Package: libxi6
+Version: 2:1.2.99.1-1
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libx11-6, libxext6
+Installed-Size: 96
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libxi
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libx/libxi/libxi6_1.2.99.1-1_armel.deb
+Size: 27908
+MD5sum: 053c1180500d61e1dff27941289db842
+Description: X11 Input extension library
+ libXi provides an X Window System client interface to the XINPUT
+ extension to the X protocol.
+ .
+ The Input extension allows setup and configuration of multiple input devices,
+ and will soon allow hotplugging of input devices; to be added and removed on
+ the fly.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXi
+
+Package: libxml2
+Version: 2.6.32.dfsg-5maemo4+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), zlib1g (>= 1:1.2.1)
+Recommends: xml-core
+Conflicts: libxslt1.1 (<= 1.1.12-8)
+Installed-Size: 1460
+Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libx/libxml2/libxml2_2.6.32.dfsg-5maemo4+0m5_armel.deb
+Size: 772628
+MD5sum: f7d307d2bd6650b6049fd83762eb28e3
+Description: GNOME XML library
+ XML is a metalanguage to let you design your own markup language.
+ A regular markup language defines a way to describe information in
+ a certain class of documents (eg HTML). XML lets you define your
+ own customized markup languages for many classes of document. It
+ can do this because it's written in SGML, the international standard
+ metalanguage for markup languages.
+ .
+ This package provides a library providing an extensive API to handle
+ such XML data files.
+
+Package: libxrandr2
+Version: 2:1.2.99.4-2
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libx11-6, libxext6, libxrender1
+Installed-Size: 72
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libxrandr
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libx/libxrandr/libxrandr2_1.2.99.4-2_armel.deb
+Size: 13696
+MD5sum: f12f8400d7ceccbbfa9fcec41f39def4
+Description: X11 RandR extension library
+ libXrandr provides an X Window System client interface to the RandR
+ extension to the X protocol.
+ .
+ The RandR extension allows for run-time configuration of display attributes
+ such as resolution, rotation, and reflection.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXrandr
+
+Package: libxrender-dev
+Version: 1:0.9.4-2+0m5
+Architecture: armel
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libxrender1 (= 1:0.9.4-2+0m5), libx11-dev (>= 2:1.0.0), x11proto-render-dev, x11proto-core-dev
+Installed-Size: 124
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libxrender
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/libx/libxrender/libxrender-dev_0.9.4-2+0m5_armel.deb
+Size: 29396
+MD5sum: 069b4dc08e7fa4225933ae15b6cc8b25
+Description: X Rendering Extension client library (development files)
+ The X Rendering Extension (Render) introduces digital image composition as
+ the foundation of a new rendering model within the X Window System.
+ Rendering geometric figures is accomplished by client-side tesselation into
+ either triangles or trapezoids.  Text is drawn by loading glyphs into the
+ server and rendering sets of them.  The Xrender library exposes this
+ extension to X clients.
+ .
+ This package provides a static library and C header files.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+
+Package: libxrender1
+Version: 1:0.9.4-2+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libx11-6
+Installed-Size: 88
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libxrender
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libx/libxrender/libxrender1_0.9.4-2+0m5_armel.deb
+Size: 26254
+MD5sum: ede22d5067efb618e81d50092d6bd09c
+Description: X Rendering Extension client library
+ The X Rendering Extension (Render) introduces digital image composition as
+ the foundation of a new rendering model within the X Window System.
+ Rendering geometric figures is accomplished by client-side tesselation into
+ either triangles or trapezoids.  Text is drawn by loading glyphs into the
+ server and rendering sets of them.  The Xrender library exposes this
+ extension to X clients.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+
+Package: libxtst6
+Version: 2:1.0.3-4+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libx11-6, libxext6, x11-common
+Installed-Size: 68
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libxtst
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libx/libxtst/libxtst6_1.0.3-4+0m5_armel.deb
+Size: 12970
+MD5sum: 2066ccf6679f1ffa8d743c9b5a0ebd8d
+Description: X11 Testing -- Resource extension library
+ libXtst provides an X Window System client interface to the Record
+ extension to the X protocol.
+ .
+ The Record extension allows X clients to synthesise input events, which
+ is useful for automated testing.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+
+Package: linux-kernel-headers
+Version: 2.6.28-20103103+0m5
+Architecture: armel
+Installed-Size: 4140
+Maintainer: Yauheni Kaliuta <yauheni.kaliuta@nokia.com>
+Source: kernel
+Priority: optional
+Section: utils
+Filename: pool/maemo5.0/free/k/kernel/linux-kernel-headers_2.6.28-20103103+0m5_armel.deb
+Size: 848092
+MD5sum: b916d8b3d9e77b0144138058d34f8d4e
+Description: Linux Kernel Headers for development
+ This package provides headers from the Linux kernel. These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: lsb-base
+Version: 3.2-15osso2
+Architecture: all
+Depends: sed
+Conflicts: lsb-core (<< 2.0-6), lsb (<< 2.0-6)
+Replaces: lsb-core (<< 2.0-6), lsb (<< 2.0-6)
+Installed-Size: 36
+Maintainer: Yauheni Kaliuta <yauheni.kaliuta@nokia.com>
+Source: lsb
+Priority: required
+Section: misc
+Filename: pool/maemo5.0/free/l/lsb/lsb-base_3.2-15osso2_all.deb
+Size: 4092
+MD5sum: 18f411eab93c4e9719900e25b4228081
+Description: Linux Standard Base 3.2 init script functionality
+ The Linux Standard Base (http://www.linuxbase.org/) is a standard
+ core system that third-party applications written for Linux can
+ depend upon.
+ .
+ This package only includes the init-functions shell library, which
+ may be used by other packages' initialization scripts for console
+ logging and other purposes.
+Original-Maintainer: Chris Lawrence <lawrencc@debian.org>
+
+Package: ncurses-base
+Version: 5.7+20081213-1.maemo1+0m5
+Architecture: all
+Essential: yes
+Conflicts: ncurses, ncurses-runtime
+Replaces: ncurses-term
+Provides: ncurses-runtime
+Installed-Size: 280
+Maintainer: Daniel Jacobowitz <ncurses-maint@debian.org>
+Source: ncurses
+Priority: required
+Section: base
+Filename: pool/maemo5.0/free/n/ncurses/ncurses-base_5.7+20081213-1.maemo1+0m5_all.deb
+Size: 11952
+MD5sum: 9a04eedfb3c25ca25820e16e7e75f3f2
+Description: Descriptions of common terminal types
+ This package contains what should be a reasonable subset of terminal
+ definitions, including: ansi, dumb, linux, rxvt, screen, sun, vt100,
+ vt102, vt220, vt52, and xterm.
+
+Package: passwd
+Version: 1:4.0.18.1-7+etch1maemo1.m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1)
+Conflicts: shadow-passwd, suidregister (<< 0.50), debconf (<< 0.5)
+Replaces: shadow-passwd, manpages (<= 1.15-2), manpages-de (<< 0.4-9), manpages-fi (<< 0.2-4), manpages-fr (<< 1.64.0-1), manpages-hu (<< 20010119-5), manpages-it (<< 0.3.4-3), manpages-ja (<< 0.5.0.0.20050915-1), manpages-ko (<< 20050219-2), manpages-pl (<= 20020406-1), manpages-es (<< 1.55-4), manpages-es-extra (<< 0.8a-15), manpages-ru (<< 0.98-3), manpages-tr, manpages-zh
+Installed-Size: 984
+Maintainer: Kaliuta Yauheni <yauheni.kaliuta@nokia.com>
+Source: shadow
+Priority: required
+Section: admin
+Filename: pool/maemo5.0/free/s/shadow/passwd_4.0.18.1-7+etch1maemo1.m5_armel.deb
+Size: 390130
+MD5sum: 3f254658472f0cda17dd68fac0834aea
+Description: change and administer password and group data
+ This package includes passwd, chsh, chfn, and many other programs to
+ maintain password and group data.
+ .
+ Shadow passwords are supported.  See /usr/share/doc/passwd/README.Debian
+Xs-Original-Maintainer: Shadow package maintainers <pkg-shadow-devel@lists.alioth.debian.org>
+
+Package: perl-base
+Version: 5.8.3-3osso13+0m5
+Architecture: armel
+Pre-Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1)
+Suggests: perl
+Conflicts: perl-5.004-base (<< 6), perl-5.005-base (<< 6), perl-5.6-base (<< 6), data-dumper, autoconf2.13 (<< 2.13-45), libscalar-list-utils-perl (<< 1:1.13-1)
+Replaces: perl-5.005-base (<< 6), perl-5.6-base (<< 6), perl (<< 5.8.0-9), perl-modules (<< 5.8.0-9), libperl5.8 (<< 5.8.0-20), libscalar-list-utils-perl
+Provides: perl5-base, perlapi-5.8.0, perlapi-5.8.1, perlapi-5.8.2, perlapi-5.8.3, data-dumper, libscalar-list-utils-perl
+Installed-Size: 2084
+Maintainer: Brendan O'Dea <bod@debian.org>
+Source: perl
+Priority: required
+Section: base
+Filename: pool/maemo5.0/free/p/perl/perl-base_5.8.3-3osso13+0m5_armel.deb
+Size: 775310
+MD5sum: 8d7059f5e437f30e71a3e49d6146278b
+Description: The Pathologically Eclectic Rubbish Lister.
+ A scripting language with delusions of full language-hood, Perl is used
+ in many system scripts and utilities.
+ .
+ This is a stripped down Perl with only essential libraries.  To make
+ full use of Perl, you'll want to install the `perl', `perl-modules' and
+ optionally `perl-doc' packages which supplement this one.
+
+Package: pkg-config
+Version: 0.21-1maemo1
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1)
+Suggests: libgnome-dev
+Installed-Size: 192
+Maintainer: Tollef Fog Heen <tfheen@debian.org>
+Priority: optional
+Section: devel
+Filename: pool/maemo5.0/free/p/pkg-config/pkg-config_0.21-1maemo1_armel.deb
+Size: 66564
+MD5sum: a0d7aa62a25ca3b0d131e7dfdcdb0fe0
+Description: manage compile and link flags for libraries
+ pkg-config is a system for managing library compile and link flags that
+ works with automake and autoconf.
+ .
+ Increasingly libraries ship with ".pc" files that allow querying of the
+ compiler and linker flags needed to use them through the pkg-config(1)
+ program.
+
+Package: readline-common
+Version: 5.2-2maemo2+0m5
+Architecture: all
+Conflicts: libreadline5 (<< 5.0-11), libreadline-common
+Replaces: libreadline4 (<< 4.3-16), libreadline5 (<< 5.0-11), libreadline-common
+Installed-Size: 136
+Maintainer: maemo integration <integration@maemo.org>
+Source: readline5
+Priority: standard
+Section: utils
+Filename: pool/maemo5.0/free/r/readline5/readline-common_5.2-2maemo2+0m5_all.deb
+Size: 50928
+MD5sum: 58d7b8dc603b6ffb25cc7b0932fbf987
+Description: GNU readline and history libraries, common files
+ The GNU readline library aids in the consistency of user interface
+ across discrete programs that need to provide a command line
+ interface.
+ .
+ The GNU history library provides a consistent user interface for
+ recalling lines of previously typed input.
+
+Package: sed
+Version: 4.1.2-8
+Architecture: armel
+Essential: yes
+Pre-Depends: libc6 (>= 2.3.5-1)
+Replaces: ssed (<< 3.59)
+Installed-Size: 832
+Maintainer: Clint Adams <schizo@debian.org>
+Priority: required
+Section: base
+Filename: pool/maemo5.0/free/s/sed/sed_4.1.2-8_armel.deb
+Size: 203456
+MD5sum: 5c1fa9bdcf3548e4bd192b748c673f6f
+Description: The GNU sed stream editor
+ sed reads the specified files or the standard input if no
+ files are specified, makes editing changes according to a
+ list of commands, and writes the results to the standard
+ output.
+
+Package: x11-common
+Version: 1:7.3+10.0maemo2
+Architecture: all
+Conflicts: xfree86-common, xorg-common, xserver-common, x-common, xserver-xorg (<< 1:7.0.12), xserver-xfree86 (<< 1:7.0), libxft-dev (<= 2.1.8.2-5), aee (<= 2.2.15b-1), ascd (<= 0.13.2-3), bibview (<= 2.2-8), fvwm1 (<= 1.24r-46), grace (<= 1:5.1.18-1), groff (<= 1.18.1.1-7), hfsutils-tcltk (<= 3.2.6-7), login.app (<= 1.2.1-18), oneko (<= 1.2.sakura.6-1), procmeter (<= 2.5.1-11), propsel (<= 971130-5.3), regexplorer (<= 0.1.6-12), tkseti (<= 3.06-1), wdm (<= 1.28-1), wily (<= 0.13.41-6), wmnetselect (<= 0.85-5.5), wmsensors (<= 1.0.4-3.4), wmtv (<= 0.6.5-15), xbanner (<= 1.31-23), xcolors (<= 1.5a-2), xcolorsel (<= 1.1a-11), xezmlm (<= 1.0.3-11), xfs-xtt (<= 1:1.4.1.xf430-6), xgdipc (<= 1.2-0.3), xgmod (<= 3.1-9), xgraph (<= 12.1-3), xlogmaster (<= 1.6.0-8), xmailbox (<= 2.5-9), xmem (<= 1.20-19), xnecview (<= 1.34-2), xodo (<= 1.2-9.2), xturqstat (<= 2.2.2sarge1), xwit (<= 3.4-6), lbxproxy (<< 7.0), proxymngr (<< 7.0), twm (<< 7.0), xbase-clients (<< 1:7.0), xdm (<= 1:1.0.1-6), xfs (<< 1:1.0), xfwp (<< 7.0), xutils (<< 1:7.0), xvfb (<< 1:1.0), qcam (<= 0.91-11.1), twlog (<= 1.3-4), xdmx (<< 1:1.0), bugsx (<= 1.08-8), buici-clock (<= 0.4.5+b1), ctwm (<= 3.7-2), emelfm (<= 0.9.2-7), fte-xwindow (<= 0.50.0-1.3), fvwm95 (<= 2.0.43ba-23+b1), gerstensaft (<= 0.2-5.1), gipsc (<= 0.4.3-2), gradio (<= 1.0.1-6), hanterm-classic (<= 3.1.6.0-4), hanterm-xf (<= 1:3.3.1p18-9.2), ibp (<= 0.21-4), isdnutils-xtools (<= 1:3.8.2005-12-06-4), ivtools-bin (<= 1.1.3-5), kdrill (<= 6.4-2.1), kinput2-canna (<= 3.1-7), kinput2-canna-wnn (<= 3.1-7), kinput2-wnn (<= 3.1-7), kterm (<= 6.2.0-45), lm-batmon (<= 0.96-3), lwm (<= 1.2.1-1), mctools-lite (<= 970129-16), mgp (<= 1.11b-6), olvwm (<= 4.4.3.2p1.4-21), olwm (<= 3.2p1.4-21), pixmap (<= 2.6pl4-14.1), plotmtv (<= 1.4.4t-8.1), ppxp-x11 (<= 0.2001080415-14), seyon (<= 2.20c-20), skkinput (<= 1:2.06.4-4), tkdesk (<= 2.0-5), videogen (<= 0.32-1), vtwm (<= 5.4.7-2), w9wm (<= 0.4.2-4), wmavgload (<= 0.7.0-6.1), wmcpu (<= 1.3-4.1), wmdate (<= 0.5-7.1), wmnet (<= 1.05-12), wmscope (<= 3.0-9.1), xautolock (<= 1:2.1-6), xbatt (<= 1.2.1-4), xbattbar (<= 1.4.2-3.1), xcal (<= 4.1-18.2), xcalendar-i18n (<= 4.0.0.i18p1-13.1), xcb (<= 2.4-4), xclip (<= 0.08-5), xclips (<= 6.21-6), xdkcal (<= 0.9d-2.1), xdu (<= 3.0-14), xengine (<= 1.11-9), xfaces (<= 3.3-25), xfishtank (<= 2.2-23.1), xfm (<= 1.4.3-8), xinput (<= 1.2-5.2), xipmsg (<= 0.8088-1.1), xlbiff (<< 4.1-4), xli (<= 1.17.0-21), xlockmore (<= 1:5.21-1), xlockmore-gl (<= 1:5.21-1), xmeter (<= 1.15-6), xmix (<= 2.1-5), xmon (<= 1.5.6-1.3), xpostit (<= 3.3.1-8.2), xprint (<= 1:0.1.0.alpha1-13), xrn (<= 9.02-7.1), xsysinfo (<= 1.7-2), xtel (<= 3.3.0-5.4), xtoolwait (<= 1.3-6), xtrlock (<= 2.0-11), xview-clients (<= 3.2p1.4-21), xviewg (<= 3.2p1.4-21), xviewg-dev (<= 3.2p1.4-21), xvkbd (<= 2.6-2.1), xxkb (<= 1.10-2.1), xzoom (<= 0.3-17), pgaccess (<= 1:0.98.8.20030520-2), xearth (<= 1.1-10.2), libmotif-dev (<= 2.2.3-1.3), motif-clients (<= 2.2.3-1.3), xslideshow (<= 3.1-8.1), xtrkcad (<= 3.1.4-1), pmud (<= 0.10-9), xnest (<< 1:1.0), xterm (<< 208-1), xmh (<= 6.8.2.dfsg.1-4), beaver (<= 0.2.5-2), lsb-core (<= 3.1-4), yank (<= 0.2.1-7.2), xpmumon (<= 1.3.0), ivtools-dev (<= 1.1.3-5), ppxp (<= 0.2001080415-14), guitar (<= 0.1.4-11), xftp, xext, xpaste, ghostview, xv (<= 3.10a-26), xserver-xfree86-dbg, grace6 (<= 5.99.0+final-4), xephem (<= 3.4-5), opera (<< 9.10-20060616), hamsoft (<< 0.2.3-1), phototk, tkworld, ucbmpeg-play (<< 2.3p-13), netscape-base-4, communicator-smotif-477, epan, navigator-smotif-477, stella (<< 2.2-1), xfractint (<< 20.3.01-1), xgobi, xpostitplus, xisp, vide (<= 1.21-3)
+Replaces: xfree86-common, xorg-common, xserver-common, x-common
+Installed-Size: 84
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: xorg
+Priority: optional
+Section: x11
+Filename: pool/maemo5.0/free/x/xorg/x11-common_7.3+10.0maemo2_all.deb
+Size: 27972
+MD5sum: 1f8f0d0ab664f486fec528b2e5acf146
+Description: X Window System (X.Org) infrastructure
+ x11-common contains the filesystem infrastructure required for further
+ installation of the X Window System in any configuration; it does not
+ provide a full installation of clients, servers, libraries, and utilities
+ required to run the X Window System.
+ .
+ A number of terms are used to refer to the X Window System, including "X",
+ "X Version 11", "X11", "X11R6", and "X11R7".  The version of X used in
+ Debian is derived from the version released by the X.Org Foundation, and
+ is thus often also referred to as "X.Org".  All of the preceding quoted
+ terms are functionally interchangeable in an Debian system.
+
+Package: x11proto-core-dev
+Version: 7.0.13-1
+Architecture: all
+Pre-Depends: x11-common (>= 1:7.0.0)
+Conflicts: x-dev (<< 6.8.99.7-1)
+Replaces: x-dev (<< 6.8.99.7-1)
+Installed-Size: 488
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: x11proto-core
+Priority: optional
+Section: x11
+Filename: pool/maemo5.0/free/x/x11proto-core/x11proto-core-dev_7.0.13-1_all.deb
+Size: 91350
+MD5sum: 1a2d84a5a923bcd8b2c784a560c8c577
+Description: X11 core wire protocol and auxiliary headers
+ This package provides development headers describing the wire protocol
+ for the core X11 protocol, and also provides a number of utility headers,
+ used to abstract OS-specific functions.
+ .
+ This package deprecates 'x-dev', a package from the monolithic builds of
+ XFree86 and X.Org.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This package is built from the X.org xproto proto module.
+
+Package: x11proto-input-dev
+Version: 1.9.99.5-4
+Architecture: all
+Pre-Depends: x11-common (>= 1:7.0.0)
+Conflicts: libxi-dev (<< 6.8.2-16)
+Replaces: libxi-dev (<< 6.8.2-16)
+Installed-Size: 124
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: x11proto-input
+Priority: optional
+Section: x11
+Filename: pool/maemo5.0/free/x/x11proto-input/x11proto-input-dev_1.9.99.5-4_all.deb
+Size: 14134
+MD5sum: 09085af90e3836b76ae51d6e63f02ded
+Description: X11 Input extension wire protocol
+ This package provides development headers describing the wire protocol
+ for the Input extension, used to control all manner of options related
+ to input device handling.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This package is built from the X.org inputproto proto module.
+
+Package: x11proto-kb-dev
+Version: 1.0.3-2
+Architecture: all
+Pre-Depends: x11-common (>= 1:7.0.0)
+Conflicts: libxkbfile-dev (<< 6.8.2-20)
+Replaces: libxkbfile-dev (<< 6.8.2-20)
+Installed-Size: 180
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: x11proto-kb
+Priority: optional
+Section: x11
+Filename: pool/maemo5.0/free/x/x11proto-kb/x11proto-kb-dev_1.0.3-2_all.deb
+Size: 26774
+MD5sum: cab45375759c2065eec06029c0bf68d2
+Description: X11 XKB extension wire protocol
+ This package provides the wire protocol for the XKEYBOARD extension, used to
+ control all manner of options related to keyboard handling and layout in
+ particular.  It does not control the addition/enabling/disabling of keyboards;
+ this is done with the XINPUT extension.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found as the module 'proto/KB' at
+ :pserver:anoncvs@cvs.freedesktop.org:/cvs/xorg
+
+Package: x11proto-render-dev
+Version: 2:0.9.3-2
+Architecture: all
+Pre-Depends: x11-common (>= 1:7.0.0)
+Conflicts: render-dev (<= 1:0.9.2-1)
+Replaces: render-dev (<= 1:0.9.2-1)
+Installed-Size: 80
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: x11proto-render
+Priority: optional
+Section: x11
+Filename: pool/maemo5.0/free/x/x11proto-render/x11proto-render-dev_0.9.3-2_all.deb
+Size: 7052
+MD5sum: c031e3ce472976c9ad0570d35656981d
+Description: X11 Render extension wire protocol
+ This package provides development headers describing the wire protocol for
+ the Render extension, used to implement Porter-Duff operations within X.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This package is built from the X.org renderproto proto module.
+
+Package: x11proto-xext-dev
+Version: 7.0.3-1
+Architecture: all
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: x11proto-input-dev, libxau-dev
+Conflicts: libxext-dev (<< 6.8.2-25), libxtst-dev (<< 6.8.2-25)
+Replaces: libxext-dev (<< 6.8.2-25), libxtst-dev (<< 6.8.2-25)
+Installed-Size: 332
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: x11proto-xext
+Priority: optional
+Section: x11
+Filename: pool/maemo5.0/free/x/x11proto-xext/x11proto-xext-dev_7.0.3-1_all.deb
+Size: 44280
+MD5sum: 9d1eb776bdcb405a44808fd2323affed
+Description: X11 various extension wire protocol
+ This package provides development headers describing the wire protocol
+ for various extensions, the client-side libraries of which are provided
+ in the Xext library.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This package is built from the X.org xextproto proto module.
+
+Package: xtrans-dev
+Version: 1.2.2-1
+Architecture: all
+Pre-Depends: x11-common (>= 1:7.0.0)
+Installed-Size: 328
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: xtrans
+Priority: optional
+Section: x11
+Filename: pool/maemo5.0/free/x/xtrans/xtrans-dev_1.2.2-1_all.deb
+Size: 62964
+MD5sum: 3871915b775187c677801dfc95168dbd
+Description: X transport library (development files)
+ xtrans includes a number of routines to make X implementations
+ transport-independent; at time of writing, it includes support for UNIX
+ sockets, IPv4, IPv6, and DECnet.
+ .
+ xtrans is not actually a library in itself; it includes .c files which are
+ then used in the compilation of X servers, libraries, et al.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libxtrans
+
+Package: zlib1g
+Version: 1:1.2.3-9.osso9+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1)
+Conflicts: zlib1 (<= 1:1.0.4-7), zlib1g-udeb
+Replaces: zlib1g-udeb
+Provides: libz1
+Installed-Size: 148
+Maintainer: Mark Brown <broonie@debian.org>
+Source: zlib
+Priority: required
+Section: libs
+Filename: pool/maemo5.0/free/z/zlib/zlib1g_1.2.3-9.osso9+0m5_armel.deb
+Size: 65338
+MD5sum: 9d7819c29fb08fc85cb1e47925cdb034
+Description: compression library - runtime
+ zlib is a library implementing the deflate compression method found
+ in gzip and PKZIP.  This package includes the shared library.
+
+Package: zlib1g-dev
+Version: 1:1.2.3-9.osso9+0m5
+Architecture: armel
+Depends: zlib1g (= 1:1.2.3-9.osso9+0m5), libc6-dev | libc-dev
+Conflicts: zlib1-dev
+Provides: libz-dev
+Installed-Size: 576
+Maintainer: Mark Brown <broonie@debian.org>
+Source: zlib
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/z/zlib/zlib1g-dev_1.2.3-9.osso9+0m5_armel.deb
+Size: 406576
+MD5sum: a03ec6ff9b6a825317b9fafb0bb9b204
+Description: compression library - development
+ zlib is a library implementing the deflate compression method found
+ in gzip and PKZIP.  This package includes the development support
+ files.

@@ -1,0 +1,20 @@
+Package: libjpeg62
+Version: 6b-9osso8+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1)
+Conflicts: libjpeg6b
+Replaces: libjpeg6b
+Provides: libjpeg6b
+Installed-Size: 196
+Maintainer: Tommi Komulainen <tommi.komulainen@nokia.com>
+Source: libjpeg6b
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/non-free/libj/libjpeg6b/libjpeg62_6b-9osso8+0m5_armel.deb
+Size: 82048
+MD5sum: 79f8916f10b7c452efa6800d7461ad8f
+Description: The Independent JPEG Group's JPEG runtime library
+ The Independent JPEG Group's JPEG library is a library for handling
+ JPEG files.
+ .
+ This package contains the shared library.
