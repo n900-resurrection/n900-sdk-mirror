@@ -164,6 +164,29 @@ Description: shared library for ALSA applications
  ALSA is the Advanced Linux Sound Architecture.
 Xsbc-Original-Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
 
+Package: libasound2-dev
+Version: 1.0.20-0maemo1+0m5
+Architecture: armel
+Depends: libc6-dev | libc-dev, libasound2 (= 1.0.20-0maemo1+0m5)
+Suggests: libasound2-doc
+Conflicts: libasound-dev, alsa-headers
+Replaces: libasound2 (<< 0.9.0rc7-2), alsa-headers
+Provides: libasound-dev
+Installed-Size: 1768
+Maintainer: Maemo Multimedia <multimedia@maemo.org>
+Source: alsa-lib
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/a/alsa-lib/libasound2-dev_1.0.20-0maemo1+0m5_armel.deb
+Size: 505348
+MD5sum: 58cf0e0e265ffe4726685d68d311a2cb
+Description: shared library for ALSA applications -- development files
+ This package contains files required for developing software
+ that makes use of libasound2, the ALSA library.
+ .
+ ALSA is the Advanced Linux Sound Architecture.
+Xsbc-Original-Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+
 Package: libatk1.0-0
 Version: 1.24.0-2maemo1
 Architecture: armel
@@ -1225,6 +1248,50 @@ Description: pthread stubs not provided by native libc, development files
  libraries to unconditionally express a dependency on pthread-stubs and
  still obtain correct behavior.
 
+Package: libpulse-dev
+Version: 0.9.15-1maemo43+0m5
+Architecture: armel
+Depends: libpulse0 (= 0.9.15-1maemo43+0m5), libpulse-mainloop-glib0, libx11-dev, x11proto-core-dev, libxt-dev, libglib2.0-dev
+Installed-Size: 384
+Maintainer: Maemo Multimedia <multimedia@maemo.org>
+Source: pulseaudio
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/p/pulseaudio/libpulse-dev_0.9.15-1maemo43+0m5_armel.deb
+Size: 72928
+MD5sum: b74ae0d80d6e30ebabe5bd6aea88d789
+Description: PulseAudio client development headers and libraries
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ Headers and libraries for developing applications that access a PulseAudio
+ sound server via PulseAudio's native interface.
+Xsbc-Original-Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+
+Package: libpulse-mainloop-glib0
+Version: 0.9.15-1maemo43+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libdbus-1-3 (>= 1.1.4), libgcc1 (>= 1:4.2.1), libgdbm3, libglib2.0-0 (>= 2.20.0), libpulse0, libpulse0 (>= 0.9.15~test5)
+Installed-Size: 96
+Maintainer: Maemo Multimedia <multimedia@maemo.org>
+Source: pulseaudio
+Priority: optional
+Section: sound
+Filename: pool/maemo5.0/free/p/pulseaudio/libpulse-mainloop-glib0_0.9.15-1maemo43+0m5_armel.deb
+Size: 25504
+MD5sum: 6b7a16a11eecb88552ef51e6d3282b9b
+Description: PulseAudio client libraries (glib support)
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ Client libraries used by applications that access a PulseAudio sound server
+ via PulseAudio's native interface.
+ .
+ This package adds support for glib2 client applications.
+Xsbc-Original-Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+
 Package: libpulse0
 Version: 0.9.15-1maemo43+0m5
 Architecture: armel
@@ -1745,6 +1812,25 @@ Description: X11 Composite extension library
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libXcomposite
 
+Package: libxcursor-dev
+Version: 1:1.1.9-2+0m5
+Architecture: armel
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libxcursor1 (= 1:1.1.9-2+0m5), x11proto-core-dev, libx11-dev, libxrender-dev, libxfixes-dev
+Installed-Size: 128
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libxcursor
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/libx/libxcursor/libxcursor-dev_1.1.9-2+0m5_armel.deb
+Size: 31562
+MD5sum: 816aa7782e166b34db1e6c31b4f09c4b
+Description: X cursor management library (development files)
+ Header files and a static version of the X cursor management library are
+ provided by this package.
+ .
+ See the libxcursor1 package for further information.
+
 Package: libxcursor1
 Version: 1:1.1.9-2+0m5
 Architecture: armel
@@ -1932,6 +2018,35 @@ Description: X11 miscellaneous extension library
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libXext
 
+Package: libxfixes-dev
+Version: 1:4.0.3-2osso1.1
+Architecture: armel
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libxfixes3 (= 1:4.0.3-2osso1.1), libx11-dev, x11proto-fixes-dev (>= 4.0-1)
+Installed-Size: 96
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libxfixes
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/libx/libxfixes/libxfixes-dev_4.0.3-2osso1.1_armel.deb
+Size: 12480
+MD5sum: 7ebc05594174b54baaf1229b6ce64bf8
+Description: X11 miscellaneous 'fixes' extension library (development headers)
+ libXfixes provides an X Window System client interface to the 'XFIXES'
+ extension to the X protocol.
+ .
+ It provides support for Region types, and some cursor functions.
+ .
+ This package contains the development headers for the library found in
+ libxfixes3.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXfixes
+
 Package: libxfixes3
 Version: 1:4.0.3-2osso1.1
 Architecture: armel
@@ -2000,6 +2115,38 @@ Description: FreeType-based font drawing library for X
  specification resolution.  Where available, the RENDER extension handles
  glyph drawing; otherwise, the core X protocol is used.
 
+Package: libxi-dev
+Version: 2:1.2.99.1-1
+Architecture: armel
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libxi6 (= 2:1.2.99.1-1), libx11-dev, libxext-dev, x11proto-input-dev
+Installed-Size: 336
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libxi
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/libx/libxi/libxi-dev_1.2.99.1-1_armel.deb
+Size: 92364
+MD5sum: b4557baeba41339067baeb5627db20f4
+Description: X11 Input extension library (development headers)
+ libXi provides an X Window System client interface to the XINPUT
+ extension to the X protocol.
+ .
+ The Input extension allows setup and configuration of multiple input devices,
+ and will soon allow hotplugging of input devices; to be added and removed on
+ the fly.
+ .
+ This package contains the development headers for the library found in
+ libxi6.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXi
+
 Package: libxi6
 Version: 2:1.2.99.1-1
 Architecture: armel
@@ -2051,6 +2198,37 @@ Description: GNOME XML library
  .
  This package provides a library providing an extensive API to handle
  such XML data files.
+
+Package: libxrandr-dev
+Version: 2:1.2.99.4-2
+Architecture: armel
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libxrandr2 (= 2:1.2.99.4-2), libx11-dev, libxext-dev, x11proto-randr-dev (>= 1.2), libxrender-dev
+Installed-Size: 120
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libxrandr
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/libx/libxrandr/libxrandr-dev_1.2.99.4-2_armel.deb
+Size: 22792
+MD5sum: c79b1fe969b67323c5125eb20da2e170
+Description: X11 RandR extension library (development headers)
+ libXrandr provides an X Window System client interface to the RandR
+ extension to the X protocol.
+ .
+ The RandR extension allows for run-time configuration of display attributes
+ such as resolution, rotation, and reflection.
+ .
+ This package contains the development headers for the library found in
+ libxrandr2.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXrandr
 
 Package: libxrandr2
 Version: 2:1.2.99.4-2
@@ -2125,6 +2303,53 @@ Description: X Rendering Extension client library
  either triangles or trapezoids.  Text is drawn by loading glyphs into the
  server and rendering sets of them.  The Xrender library exposes this
  extension to X clients.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+
+Package: libxt-dev
+Version: 1:1.0.5-4+0m5
+Architecture: armel
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libc6 (>= 2.5.0-1), libxt6 (= 1:1.0.5-4+0m5), libx11-dev, x11proto-core-dev, libsm-dev
+Installed-Size: 1308
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libxt
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/libx/libxt/libxt-dev_1.0.5-4+0m5_armel.deb
+Size: 485386
+MD5sum: a84e174c6b8edee3b89fad176dde40aa
+Description: X11 toolkit intrinsics library (development headers)
+ libXt provides the X Toolkit Intrinsics, an abstract widget library upon
+ which other toolkits are based.  Xt is the basis for many toolkits, including
+ the Athena widgets (Xaw), and LessTif (a Motif implementation).
+ .
+ This package contains the development headers for the library found in
+ libxt6.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+
+Package: libxt6
+Version: 1:1.0.5-4+0m5
+Architecture: armel
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libc6 (>= 2.5.0-1), libice6 (>= 1:1.0.0), libsm6, libx11-6
+Installed-Size: 376
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libxt
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/libx/libxt/libxt6_1.0.5-4+0m5_armel.deb
+Size: 164246
+MD5sum: a8639bb56fce8d923829112759c15c79
+Description: X11 toolkit intrinsics library
+ libXt provides the X Toolkit Intrinsics, an abstract widget library upon
+ which other toolkits are based.  Xt is the basis for many toolkits, including
+ the Athena widgets (Xaw), and LessTif (a Motif implementation).
  .
  More information about X.Org can be found at:
  <URL:http://xorg.freedesktop.org>
@@ -2371,6 +2596,32 @@ Description: X11 core wire protocol and auxiliary headers
  .
  This package is built from the X.org xproto proto module.
 
+Package: x11proto-fixes-dev
+Version: 4.0.0-0osso1
+Architecture: all
+Pre-Depends: x11-common (>= 1:1.0)
+Depends: x11-common, x11proto-core-dev, x11proto-xext-dev
+Conflicts: libxfixes-dev (<< 6.8.2-16)
+Replaces: libxfixes-dev (<< 6.8.2-16)
+Installed-Size: 80
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: x11proto-fixes
+Priority: optional
+Section: x11
+Filename: pool/maemo5.0/free/x/x11proto-fixes/x11proto-fixes-dev_4.0.0-0osso1_all.deb
+Size: 5218
+MD5sum: b7473b8668c0692a2748bc8d6324a7d7
+Description: X11 Fixes extension wire protocol
+ This package provides the wire protocol for the Fixes extension, which contains
+ a few small extensions to the X protocol, including a Region type.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found as the module 'proto/Fixes' at
+ :pserver:anoncvs@cvs.freedesktop.org:/cvs/xorg
+
 Package: x11proto-input-dev
 Version: 1.9.99.5-4
 Architecture: all
@@ -2423,6 +2674,32 @@ Description: X11 XKB extension wire protocol
  .
  This module can be found as the module 'proto/KB' at
  :pserver:anoncvs@cvs.freedesktop.org:/cvs/xorg
+
+Package: x11proto-randr-dev
+Version: 1.2.99.3
+Architecture: all
+Pre-Depends: x11-common (>= 1:7.0.0)
+Conflicts: libxrandr-dev (<< 6.8.2-21)
+Replaces: libxrandr-dev (<< 6.8.2-21)
+Installed-Size: 104
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: x11proto-randr
+Priority: optional
+Section: x11
+Filename: pool/maemo5.0/free/x/x11proto-randr/x11proto-randr-dev_1.2.99.3_all.deb
+Size: 27978
+MD5sum: 217a14ee92d51ea8ea969c256f594603
+Description: X11 RandR extension wire protocol
+ This package provides development headers describing the wire protocol
+ for the RandR extension, used to change display properties such as
+ resolution, rotation, reflection, et al, on the fly.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This package is built from the X.org randrproto proto module.
 
 Package: x11proto-render-dev
 Version: 2:0.9.3-2
