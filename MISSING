@@ -2,5 +2,9 @@
 hildon-fm-l10n-mr
 hildon-libs-l10n-mr
 libc-dev
+libgles2-sgx-img
+libgles2-sgx-img-dev
+opengles-sgx-img-common
+opengles-sgx-img-common-dev
 osso-sounds-ui
 osso-system-lock-l10n-mr

@@ -1314,6 +1314,354 @@ Description: PulseAudio client libraries
  via PulseAudio's native interface.
 Xsbc-Original-Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
 
+Package: libqt4-core
+Version: 4.7.0~git20100909-0maemo1+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libglib2.0-0 (>= 2.14.6-1osso1), libstdc++6 (>= 4.2.1), zlib1g (>= 1:1.2.1)
+Installed-Size: 3620
+Maintainer: Qt Development Frameworks <qt-info@nokia.com>
+Source: qt4-x11
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/q/qt4-x11/libqt4-core_4.7.0~git20100909-0maemo1+0m5_armel.deb
+Size: 1538926
+MD5sum: ebc8c06c5a3b0af9b7556d5dc68e34e7
+Description: Qt 4 core module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtCore module contains core non-GUI functionality.
+
+Package: libqt4-dbus
+Version: 4.7.0~git20100909-0maemo1+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libqt4-xml (= 4.7.0~git20100909-0maemo1+0m5), libqt4-core (= 4.7.0~git20100909-0maemo1+0m5), libstdc++6 (>= 4.2.1)
+Installed-Size: 668
+Maintainer: Qt Development Frameworks <qt-info@nokia.com>
+Source: qt4-x11
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/q/qt4-x11/libqt4-dbus_4.7.0~git20100909-0maemo1+0m5_armel.deb
+Size: 230136
+MD5sum: cf3b24fb5ae42b6011be60b931b5fc56
+Description: Qt 4 D-Bus module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtDBus module is a Unix-only library that you can use to make Inter-Process
+ Communication using the D-Bus protocol.
+ .
+ Applications using the QtDBus module can provide services to other, remote
+ applications by exporting objects, as well as use services exported by those
+ applications by placing calls and accessing properties.
+
+Package: libqt4-declarative
+Version: 4.7.0~git20100909-0maemo1+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libglib2.0-0 (>= 2.14.6-1osso1), libstdc++6 (>= 4.2.1), zlib1g (>= 1:1.2.1), libqt4-core (= 4.7.0~git20100909-0maemo1+0m5), libqt4-gui (= 4.7.0~git20100909-0maemo1+0m5), libqt4-svg (= 4.7.0~git20100909-0maemo1+0m5), libqt4-opengl (= 4.7.0~git20100909-0maemo1+0m5), libqt4-webkit (= 4.7.0~git20100909-0maemo1+0m5), libqt4-script (= 4.7.0~git20100909-0maemo1+0m5), libqt4-network (= 4.7.0~git20100909-0maemo1+0m5), libqt4-xmlpatterns (= 4.7.0~git20100909-0maemo1+0m5), libqt4-dbus (= 4.7.0~git20100909-0maemo1+0m5), libqt4-sql (= 4.7.0~git20100909-0maemo1+0m5), libqt4-sql-sqlite (= 4.7.0~git20100909-0maemo1+0m5)
+Installed-Size: 4396
+Maintainer: Qt Development Frameworks <qt-info@nokia.com>
+Source: qt4-x11
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/q/qt4-x11/libqt4-declarative_4.7.0~git20100909-0maemo1+0m5_armel.deb
+Size: 1425860
+MD5sum: b3b30cf2d6b252bcbd0377313e2c3f5e
+Description: Qt 4 declarative module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtDeclarative module contains declarative UI functionality.
+
+Package: libqt4-dev
+Version: 4.7.0~git20100909-0maemo1+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libqt4-dbus (= 4.7.0~git20100909-0maemo1+0m5), libqt4-xml (= 4.7.0~git20100909-0maemo1+0m5), libqt4-core (= 4.7.0~git20100909-0maemo1+0m5), libstdc++6 (>= 4.2.1), zlib1g (>= 1:1.2.1), libqt4-network, libqt4-gui, libqt4-svg, libqt4-webkit, libqt4-sql, libqt4-script, libqt4-test, libqt4-maemo5, libqt4-multimedia, libqt4-phonon, libqt4-opengl (= 4.7.0~git20100909-0maemo1+0m5), libqt4-xmlpatterns, libqt4-declarative, libgles2-sgx-img-dev, opengles-sgx-img-common-dev, libsqlite3-dev
+Conflicts: libqt4-opengl-dev (<< 4.6.99)
+Replaces: libqt4-opengl-dev (<< 4.6.99)
+Provides: libqt4-opengl-dev
+Installed-Size: 30476
+Maintainer: Qt Development Frameworks <qt-info@nokia.com>
+Source: qt4-x11
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/q/qt4-x11/libqt4-dev_4.7.0~git20100909-0maemo1+0m5_armel.deb
+Size: 5845652
+MD5sum: 38fa39a046662d2a1d457c4b5a3f7903
+Description: Qt 4 development files
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the header development files and development programs
+ such as qmake used for building Qt4 applications.
+
+Package: libqt4-gui
+Version: 4.7.0~git20100909-0maemo1+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libfontconfig1 (>= 2.4.1), libfreetype6 (>= 2.3.5), libgcc1 (>= 1:4.2.1), libglib2.0-0 (>= 2.14.6-1osso1), libice6 (>= 1:1.0.0), libjpeg62, libpng12-0 (>= 1.2.8rel), libqt4-core (= 4.7.0~git20100909-0maemo1+0m5), libsm6, libstdc++6 (>= 4.2.1), libtiff4, libx11-6, libxext6, libxi6, libxrandr2 (>= 2:1.2.0), libxrender1, zlib1g (>= 1:1.2.1), fontconfig, opengles-sgx-img-common, libgles2-sgx-img
+Installed-Size: 11844
+Maintainer: Qt Development Frameworks <qt-info@nokia.com>
+Source: qt4-x11
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/q/qt4-x11/libqt4-gui_4.7.0~git20100909-0maemo1+0m5_armel.deb
+Size: 5034732
+MD5sum: 70c61d59d2fd4fc1f5725b4a4fa152e1
+Description: Qt 4 GUI module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtGui module extends QtCore with GUI functionality.
+
+Package: libqt4-maemo5
+Version: 4.7.0~git20100909-0maemo1+0m5
+Architecture: armel
+Depends: libqt4-gui (= 4.7.0~git20100909-0maemo1+0m5), libqt4-dbus (= 4.7.0~git20100909-0maemo1+0m5)
+Installed-Size: 132
+Maintainer: Qt Development Frameworks <qt-info@nokia.com>
+Source: qt4-x11
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/q/qt4-x11/libqt4-maemo5_4.7.0~git20100909-0maemo1+0m5_armel.deb
+Size: 29792
+MD5sum: 8226af8edd9913e9fb51738002152cdd
+Description: Qt 4 Maemo5 module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtMaemo5 module extends QtGui with Maemo5 specific functionality.
+
+Package: libqt4-multimedia
+Version: 4.7.0~git20100909-0maemo1+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libqt4-core (= 4.7.0~git20100909-0maemo1+0m5), libstdc++6 (>= 4.2.1), zlib1g (>= 1:1.2.1), libqt4-gui (= 4.7.0~git20100909-0maemo1+0m5), libasound2 (>= 1.0.0), libpulse0
+Installed-Size: 252
+Maintainer: Qt Development Frameworks <qt-info@nokia.com>
+Source: qt4-x11
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/q/qt4-x11/libqt4-multimedia_4.7.0~git20100909-0maemo1+0m5_armel.deb
+Size: 64916
+MD5sum: 4b36b26ed782d506877df443260d4c30
+Description: Qt 4 Multimedia Libraries
+ Qt 4 media playing libraries
+
+Package: libqt4-network
+Version: 4.7.0~git20100909-0maemo1+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libqt4-core (= 4.7.0~git20100909-0maemo1+0m5), libstdc++6 (>= 4.2.1), zlib1g (>= 1:1.2.1)
+Installed-Size: 1776
+Maintainer: Qt Development Frameworks <qt-info@nokia.com>
+Source: qt4-x11
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/q/qt4-x11/libqt4-network_4.7.0~git20100909-0maemo1+0m5_armel.deb
+Size: 618888
+MD5sum: 03e2fcb4b9c46aed6592f3107305e1f2
+Description: Qt 4 network module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtNetwork module offers classes that allow you to write TCP/IP clients and
+ servers. It provides classes to make network programming easier and portable.
+
+Package: libqt4-opengl
+Version: 4.7.0~git20100909-0maemo1+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libqt4-core (= 4.7.0~git20100909-0maemo1+0m5), libc6 (>= 2.5.0-1), libfontconfig1 (>= 2.6.0), libfreetype6 (>= 2.3.9), libgcc1 (>= 1:4.2.1), libqt4-core (>= 4.7.0~git20100909), libqt4-dbus (>= 4.7.0~git20100909), libqt4-gui (>= 4.7.0~git20100909), libqt4-xml (>= 4.7.0~git20100909), libstdc++6 (>= 4.2.1), libx11-6, libxext6, libxrender1, opengles-sgx-img-common, libgles2-sgx-img
+Installed-Size: 628
+Maintainer: Qt Development Frameworks <qt-info@nokia.com>
+Source: qt4-x11
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/q/qt4-x11/libqt4-opengl_4.7.0~git20100909-0maemo1+0m5_armel.deb
+Size: 220880
+MD5sum: f47fb179b430269e3ecf36fc39f9a749
+Description: Qt 4 OpenGL module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtOpenGL module offers classes that make it easy to use OpenGL in Qt
+ applications.
+ .
+ OpenGL is a standard API for rendering 3D graphics. OpenGL only deals with 3D
+ rendering and provides little or no support for GUI programming issues.
+ .
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the development files needed to build Qt 4 applications
+ using QtOpenGL library.
+
+Package: libqt4-phonon
+Version: 4.7.0~git20100909-0maemo1+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libqt4-core (= 4.7.0~git20100909-0maemo1+0m5), libstdc++6 (>= 4.2.1), zlib1g (>= 1:1.2.1), libqt4-xml (= 4.7.0~git20100909-0maemo1+0m5), libqt4-gui (= 4.7.0~git20100909-0maemo1+0m5), libqt4-opengl (= 4.7.0~git20100909-0maemo1+0m5)
+Installed-Size: 764
+Maintainer: Qt Development Frameworks <qt-info@nokia.com>
+Source: qt4-x11
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/q/qt4-x11/libqt4-phonon_4.7.0~git20100909-0maemo1+0m5_armel.deb
+Size: 242384
+MD5sum: 3dd003eda5042a38d0ccc245575ff61c
+Description: Qt 4 Phonon Libraries
+ Qt 4 media playing libraries
+
+Package: libqt4-script
+Version: 4.7.0~git20100909-0maemo1+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libqt4-dbus (= 4.7.0~git20100909-0maemo1+0m5), libqt4-core (= 4.7.0~git20100909-0maemo1+0m5), libstdc++6 (>= 4.2.1)
+Installed-Size: 3780
+Maintainer: Qt Development Frameworks <qt-info@nokia.com>
+Source: qt4-x11
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/q/qt4-x11/libqt4-script_4.7.0~git20100909-0maemo1+0m5_armel.deb
+Size: 1361760
+MD5sum: cb02485085dc09ac5b00bbfed2e172d8
+Description: Qt 4 script module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtScript module provides classes for making Qt applications scriptable.
+
+Package: libqt4-sql
+Version: 4.7.0~git20100909-0maemo1+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libqt4-core (= 4.7.0~git20100909-0maemo1+0m5), libstdc++6 (>= 4.2.1)
+Recommends: libqt4-sql-sqlite
+Suggests: libqt4-dev
+Installed-Size: 308
+Maintainer: Qt Development Frameworks <qt-info@nokia.com>
+Source: qt4-x11
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/q/qt4-x11/libqt4-sql_4.7.0~git20100909-0maemo1+0m5_armel.deb
+Size: 100730
+MD5sum: 6f416469cf1da9a0aa803a621513288f
+Description: Qt 4 SQL module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtSql module helps you provide seamless database integration to your Qt
+ applications.
+ .
+ If you wish to to use the SQL module for development, you should install the
+ libqt4-dev package.
+
+Package: libqt4-sql-sqlite
+Version: 4.7.0~git20100909-0maemo1+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libqt4-core (>= 4.7.0~git20100909), libqt4-sql (>= 4.7.0~git20100909), libsqlite3-0 (>= 3.6.14), libstdc++6 (>= 4.2.1), libqt4-sql (= 4.7.0~git20100909-0maemo1+0m5)
+Installed-Size: 100
+Maintainer: Qt Development Frameworks <qt-info@nokia.com>
+Source: qt4-x11
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/q/qt4-x11/libqt4-sql-sqlite_4.7.0~git20100909-0maemo1+0m5_armel.deb
+Size: 21480
+MD5sum: e6919ad07e20c18257408b1acb6a6635
+Description: Qt 4 SQLite plugin
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+  is its rich set of widgets that provide standard GUI functionality.
+
+Package: libqt4-svg
+Version: 4.7.0~git20100909-0maemo1+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libqt4-core (= 4.7.0~git20100909-0maemo1+0m5), libqt4-gui (= 4.7.0~git20100909-0maemo1+0m5), libstdc++6 (>= 4.2.1)
+Installed-Size: 532
+Maintainer: Qt Development Frameworks <qt-info@nokia.com>
+Source: qt4-x11
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/q/qt4-x11/libqt4-svg_4.7.0~git20100909-0maemo1+0m5_armel.deb
+Size: 176296
+MD5sum: 453088bf5889022b8b03228b487c794c
+Description: Qt 4 SVG module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtSvg module provides classes for displaying the contents of SVG files.
+ .
+ Scalable Vector Graphics (SVG) is a language for describing two-dimensional
+ graphics and graphical applications in XML.
+
+Package: libqt4-test
+Version: 4.7.0~git20100909-0maemo1+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libqt4-core (= 4.7.0~git20100909-0maemo1+0m5), libstdc++6 (>= 4.2.1)
+Installed-Size: 188
+Maintainer: Qt Development Frameworks <qt-info@nokia.com>
+Source: qt4-x11
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/q/qt4-x11/libqt4-test_4.7.0~git20100909-0maemo1+0m5_armel.deb
+Size: 59546
+MD5sum: 9125d7a16348bb5f7800b10115a919a8
+Description: Qt 4 test module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtTest module provides classes for unit testing Qt applications and
+ libraries.
+
+Package: libqt4-webkit
+Version: 4.7.0~git20100909-0maemo1+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libqt4-network (= 4.7.0~git20100909-0maemo1+0m5), libqt4-core (= 4.7.0~git20100909-0maemo1+0m5), libqt4-gui (= 4.7.0~git20100909-0maemo1+0m5), libqt4-phonon (= 4.7.0~git20100909-0maemo1+0m5), libqt4-xmlpatterns (= 4.7.0~git20100909-0maemo1+0m5), libqt4-multimedia (= 4.7.0~git20100909-0maemo1+0m5), libstdc++6 (>= 4.2.1), libsqlite3-0
+Installed-Size: 18168
+Maintainer: Qt Development Frameworks <qt-info@nokia.com>
+Source: qt4-x11
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/q/qt4-x11/libqt4-webkit_4.7.0~git20100909-0maemo1+0m5_armel.deb
+Size: 6046880
+MD5sum: 2b6d2b1ff2d117a8f2732e89409a6a2f
+Description: Qt 4 WebKit module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ QtWebKit provides a Web browser engine that makes it easy to embed content
+ from the World Wide Web into your Qt application.
+
+Package: libqt4-xml
+Version: 4.7.0~git20100909-0maemo1+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libqt4-core (= 4.7.0~git20100909-0maemo1+0m5), libstdc++6 (>= 4.2.1)
+Installed-Size: 372
+Maintainer: Qt Development Frameworks <qt-info@nokia.com>
+Source: qt4-x11
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/q/qt4-x11/libqt4-xml_4.7.0~git20100909-0maemo1+0m5_armel.deb
+Size: 115464
+MD5sum: 889e3f70b45624e6e2f2e7404b91348b
+Description: Qt 4 XML module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtXml module provides a stream reader and writer for XML documents,
+ and C++ implementations of SAX and DOM.
+
+Package: libqt4-xmlpatterns
+Version: 4.7.0~git20100909-0maemo1+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libqt4-core (= 4.7.0~git20100909-0maemo1+0m5), libstdc++6 (>= 4.2.1), libqt4-xml (= 4.7.0~git20100909-0maemo1+0m5)
+Installed-Size: 5668
+Maintainer: Qt Development Frameworks <qt-info@nokia.com>
+Source: qt4-x11
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/q/qt4-x11/libqt4-xmlpatterns_4.7.0~git20100909-0maemo1+0m5_armel.deb
+Size: 1622908
+MD5sum: b3454c54e98b913ed6b6525ef4ab878a
+Description: Qt 4 XML Patterns module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtXmlPatterns module provides XML Patterns for traversing XML documents
+
 Package: libreadline5
 Version: 5.2-2maemo2+0m5
 Architecture: armel
@@ -1440,6 +1788,43 @@ Description: X11 Session Management library
  <URL:http://xorg.freedesktop.org>
  <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
 
+Package: libsqlite3-0
+Version: 3.6.14-1maemo4+0m5
+Architecture: armel
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1)
+Installed-Size: 448
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.hu>
+Source: sqlite3
+Priority: optional
+Section: libs
+Filename: pool/maemo5.0/free/s/sqlite3/libsqlite3-0_3.6.14-1maemo4+0m5_armel.deb
+Size: 220380
+MD5sum: 27db5584677165fa458ed8e51ae69933
+Description: SQLite 3 shared library
+ SQLite is a C library that implements an SQL database engine.
+ Programs that link with the SQLite library can have SQL database
+ access without running a separate RDBMS process.
+
+Package: libsqlite3-dev
+Version: 3.6.14-1maemo4+0m5
+Architecture: armel
+Depends: libsqlite3-0 (= 3.6.14-1maemo4+0m5), libc6-dev
+Suggests: sqlite3-doc
+Installed-Size: 772
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.hu>
+Source: sqlite3
+Priority: optional
+Section: libdevel
+Filename: pool/maemo5.0/free/s/sqlite3/libsqlite3-dev_3.6.14-1maemo4+0m5_armel.deb
+Size: 301650
+MD5sum: 2bd027c3e6871ce0b28f8c3b89d12e52
+Description: SQLite 3 development files
+ SQLite is a C library that implements an SQL database engine.
+ Programs that link with the SQLite library can have SQL database
+ access without running a separate RDBMS process.
+ .
+ This package contains the development files (headers, static libraries)
+
 Package: libssl-dev
 Version: 0.9.8n-1+maemo4+0m5
 Architecture: armel
@@ -1476,6 +1861,27 @@ Description: SSL shared libraries
  apache-ssl, telnet-ssl and openssh.
  .
  It is part of the OpenSSL implementation of SSL.
+
+Package: libstdc++6
+Version: 4.2.1-4maemo13+0m5
+Architecture: armel
+Depends: gcc-4.2-base (= 4.2.1-4maemo13+0m5), libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1)
+Conflicts: scim (<< 1.4.2-1)
+Installed-Size: 880
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Source: gcc-4.2
+Priority: required
+Section: libs
+Filename: pool/maemo5.0/free/g/gcc-4.2/libstdc++6_4.2.1-4maemo13+0m5_armel.deb
+Size: 277488
+MD5sum: ec9156f9ded502cc92e7f5c472de44f2
+Description: The GNU Standard C++ Library v3
+ This package contains an additional runtime library for C++ programs
+ built with the GNU compiler.
+ .
+ libstdc++-v3 is a complete rewrite from the previous libstdc++-v2, which
+ was included up to g++-2.95. The first version of libstdc++-v3 appeared
+ in g++-3.0.
 
 Package: libtiff4
 Version: 1:3.8.2-11maemo5+0m5
