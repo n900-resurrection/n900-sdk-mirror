@@ -1,0 +1,1271 @@
+Package: bash3
+Priority: optional
+Section: user/utilities
+Installed-Size: 520
+Maintainer: Andrew Zabolotny <zap@homelink.ru>
+Architecture: armel
+Version: 3.2-0maemo10
+Replaces: bash, bash2
+Provides: bash
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libncurses5 (>= 5.7+20081213-1.maemo1+0m5), libreadline5 (>= 5.2-2maemo2+0m5)
+Conflicts: bash, bash2
+Filename: pool/fremantle/free/b/bash3/bash3_3.2-0maemo10_armel.deb
+Size: 250596
+MD5sum: b6336d2d4f92f64129bd42d61d2b93f6
+SHA1: fb771b71f137fc6770e54475414ac1aa236a9513
+SHA256: 56578746d6b2bb801553f930212f1d22eaaa4c777e3de14361ed0d08e389a837
+SHA512: bd2ba675ff93a331384b4869a4f1456bc41bd9ae92dba044b2c409285915987c80aad61a41a276610b2d329e032256af5be7a56d2ee19de61a1f3f9144c66aaa
+Description: The GNU Bourne Again SHell branch 3.x, tuned for maemo
+ Bash is a command-line program which may replace your standard
+ command-line shell with a improved, feature-rich interface.
+ .
+ Bash is an sh-compatible command language interpreter that executes
+ commands read from the standard input or from a file.  Bash also
+ incorporates useful features from the Korn and C shells (ksh and csh).
+ .
+ This is a special version for the Maemo platform, with everything
+ that is not too useful on a Internet Tablet stripped off.
+Bugtracker: mailto:zap@homelink.ru
+Maemo-Icon-26: 
+ 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
+
+Package: busybox-power
+Priority: extra
+Section: user/utilities
+Installed-Size: 940
+Maintainer: Dennis Groenen <tj.groenen@gmail.com>
+Original-Maintainer: Yauheni Kaliuta <yauheni.kaliuta@nokia.com>
+Architecture: armel
+Version: 1.23.1power2
+Depends: libc6 (>= 2.5.0-1)
+Filename: pool/fremantle/free/b/busybox-power/busybox-power_1.23.1power2_armel.deb
+Size: 533322
+MD5sum: b2c9c65930c4ca82bd8ecc3e6bc0c8f1
+SHA1: 3b1d9fcfb877110361daa46dcc6b7cfd691639e6
+SHA256: 3a10a0dcf5489003ae5887f29fa8f755ef02ec90bc08d0dba6401a8e70cd5ed5
+SHA512: fa36a437b965d394ca0fb7b04ca1fabb8d775904d68c7711e2873311cba30dca26ea893fea18ef8bab62db3124e75d690d8f7a3fa0ca0bfc72fee1226786cb0a
+Description: Tiny utilities for small and embedded systems - enhanced package
+ BusyBox combines tiny versions of many common UNIX utilities into a
+ single small executable. It provides the default shell used in Maemo. This
+ package replaces the default BusyBox executable with the latest upstream
+ version. It also includes Maemo-specific bug fixes, a lot more utilities
+ and additional features (like Ctrl-R reverse history search, proper shell
+ history handling and swapon with priority support).
+ .
+ Also see http://talk.maemo.org/showthread.php?t=72801.
+ .
+ This package won't overwrite any existing symlinks and binaries providing
+ the same functionality (like GNU tar if installed/symlinked).
+ .
+ Additional utilities provided over the default BusyBox package:
+ bunzip2 bzcat bzip2 cpio cttyhack dnsdomainname dumpkmap ed fbset
+ fdflush hush ip ipaddr iplink iproute iprule mountpoint mt nc
+ pipe_progress popmaildir pscan usleep blockdev bootchartd crond
+ fdisk ifenslave ip iptunnel klogd loadkmap logread makedevs mdev
+ nbd-client raidautorun setconsole sulogin sysctl syslogd vconfig
+ adjtimex arping base64 beep brctl cal catv chpst chrt crontab
+ cryptpw dc devmem diff dos2unix dumpleases eject envdir envuidgid
+ ether-wake fdformat fgconsole flock freeramdisk ftpget ftpput
+ hexdump ionice iostat ipcalc last length less linux32 linux64
+ loadfont lpd lpq lpr lzcat lzma lzop lzopcat makemime man microcom
+ mkpasswd mpstat nmeter patch pmap readahead reformime resize rev rpm
+ rpm2cpio rtcwake runsv runsvdir rx script scriptreplay setarch setfont
+ setuidgid showkey smemcap softlimit strings sv svlogd tcpsvd telnet
+ tftp timeout traceroute traceroute6 ttysize udhcpc udpsvd unix2dos
+ unlzma unlzop unxz unzip uudecode uuencode vlock volname wall xz xzcat
+ ar acpid add-shell addgroup adduser arp chat delgroup deluser
+ dhcprelay dnsd fakeidentd ftpd hdparm httpd ifplugd inetd lspci ntpd
+ rdate rdev readprofile remove-shell sendmail sha256sum sha512sum
+ telnetd tftpd tunctl udhcpd watchdog zcip whois pstree pwdx groups
+ users setserial nameif ubirsvol
+Bugtracker: https://garage.maemo.org/tracker/?group_id=2216
+Maemo-Display-Name: Enhanced BusyBox shell
+Maemo-Icon-26: 
+ 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
+ 5l7y6xMAAAAASUVORK5CYII=
+
+Package: ffmpeg
+Priority: optional
+Section: video
+Installed-Size: 832
+Maintainer: Jeff Moe <moe@blagblagblag.org>
+Architecture: armel
+Version: 4:0.5+svn20090706-5
+Depends: libavcodec52 (>= 3:0.svn20090303-1) | libavcodec-extra-52 (>= 3:0.svn20090303-1), libavdevice52 (>= 3:0.svn20090303-1) | libavdevice-extra-52 (>= 3:0.svn20090303-1), libavfilter0 (>= 3:0.svn20090303-1) | libavfilter-extra-0 (>= 3:0.svn20090303-1), libavformat52 (>= 3:0.svn20090303-1) | libavformat-extra-52 (>= 3:0.svn20090303-1), libavutil49 (>= 3:0.svn20090303-1) | libavutil-extra-49 (>= 3:0.svn20090303-1), libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libpostproc51 (>= 3:0.svn20090303-1) | libpostproc-extra-51 (>= 3:0.svn20090303-1), libsdl1.2 (>= 1.2.10-1), libswscale0 (>= 3:0.svn20090303-1) | libswscale-extra-0 (>= 3:0.svn20090303-1)
+Filename: pool/fremantle/free/f/ffmpeg/ffmpeg_0.5+svn20090706-5_armel.deb
+Size: 246546
+MD5sum: bf8eeaa8d995eb9f65d91148c27030f8
+SHA1: 8f015a54880cb3c7b601502b34063632b10b9ba3
+SHA256: fb0fd84993215bdc02ffdf31723a936dad4253585a69b349dc08f98c62149918
+SHA512: 0dbbc0babf3fd260c4d6c31375f3296468d94d0530ae9e201d11fc278efacc7b1b310ee80b9e6cf7c1258622533e7ed7920065e5c1e2b95259a1d3d21e5f841c
+Description: multimedia player, server and encoder
+ This package contains the ffplay multimedia player, the ffserver streaming
+ server and the ffmpeg audio and video encoder. They support most existing
+ file formats (AVI, MPEG, OGG, Matroska, ASF...) and encoding formats (MPEG,
+ DivX, MPEG4, AC3, DV...).
+
+Package: fiasco-image-update-ask
+Priority: extra
+Section: utils
+Installed-Size: 64
+Maintainer: Pali Rohár <pali.rohar@gmail.com>
+Architecture: armel
+Version: 0.4
+Depends: libc6 (>= 2.5.0-1), zlib1g (>= 1.2.3-9.osso9+0m5), softupd, hildon-application-manager
+Filename: pool/fremantle/free/f/fiasco-image-update-ask/fiasco-image-update-ask_0.4_armel.deb
+Size: 8208
+MD5sum: 30f0e6b6d84e5e4441fe9d574aed199b
+SHA1: a5a77586f2660d8a37496aa3a37a90c079321e18
+SHA256: e1580f83e47a99105cda20ca97e9ce3d65d2e1ab059cf86ef3e07d939966b86d
+SHA512: ba14ce3699a09f6c6e4909d261cf373b2eac4ace778477083cce26725dd31951f942ea59e11b047d4eb3f928bfe8a7e11472e136443b4264b6db23308b8f4c52
+Description: Ask before updating kernel
+
+Package: libavcodec-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 5400
+Maintainer: Jeff Moe <moe@blagblagblag.org>
+Architecture: armel
+Source: ffmpeg
+Version: 4:0.5+svn20090706-5
+Depends: libavcodec52 (>= 4:0.5+svn20090706-5) | libavcodec-unstripped-52 (>= 4:0.5+svn20090706-5), libavcodec52 (<= 4:0.5+svn20090706-99) | libavcodec-unstripped-52 (<= 4:0.5+svn20090706-99), libavutil-dev (= 4:0.5+svn20090706-5)
+Suggests: libfaad-dev, libgsm1-dev, libogg-dev, libschroedinger-dev, libspeex-dev, libtheora-dev (>> 0.0.0.alpha4), libvorbis-dev, libx11-dev, libxext-dev, zlib1g-dev
+Filename: pool/fremantle/free/f/ffmpeg/libavcodec-dev_0.5+svn20090706-5_armel.deb
+Size: 2310154
+MD5sum: a32ef122403f21f7c03569eb69fedcb1
+SHA1: 9d01ecabfc19ed1c7c1319cbdbf5e132174fcb98
+SHA256: 6f9e82f33a97cf4b15e96cefcaf637b3cf6c9c5eb3cd1dc701e4359baace0a22
+SHA512: d6020a8a6df01ef1144048d2371f96f3e74325206e14003b3a7516428e9e1c0409fb782186bae73d2061db56e143731189b7791d8d5c4e6303ff0bb2ac6298b2
+Description: development files for libavcodec
+ This is the codec library from the ffmpeg project. It supports most existing
+ encoding formats (MPEG, DivX, MPEG4, AC3, DV...).
+ .
+ This package contains the header files and static libraries needed to
+ compile applications or shared objects that use libavcodec.
+
+Package: libavcodec52
+Priority: optional
+Section: libs
+Installed-Size: 4636
+Maintainer: Jeff Moe <moe@blagblagblag.org>
+Architecture: armel
+Source: ffmpeg
+Version: 4:0.5+svn20090706-5
+Depends: libavutil49 (>= 3:0.svn20090303-1) | libavutil-extra-49 (>= 3:0.svn20090303-1), libc6 (>= 2.5.0-1), libfaad2-0 (>= 2.0.0+cvs20040908+mp4v2+bmp), libgcc1 (>= 1:4.2.1), libspeex1 (>= 1.2~beta3-1), libtheora0, libvorbis0a (>= 1.2.3.tk1), libvorbisenc2 (>= 1.2.3.tk1), zlib1g (>= 1:1.2.1)
+Filename: pool/fremantle/free/f/ffmpeg/libavcodec52_0.5+svn20090706-5_armel.deb
+Size: 2108994
+MD5sum: 61d57f470d1d38341e809c637f38a41f
+SHA1: 74b36d77161019281a056484e600aef5e837e5cf
+SHA256: 0d08fed9e7b3a19f9c739284720fb0f43b32f255fecdb910a186582e8cc27c4e
+SHA512: 964170f8b9737e38b085bb0e6b715d229ce728db28c38d4547794cfcdcf55a06ccef71bb7b1b890a1e0e3a90869f829eb9f859621bbd84162d96c11ea6f099ad
+Description: ffmpeg codec library
+ This is the codec library from the ffmpeg project. It supports most existing
+ encoding formats (MPEG, DivX, MPEG4, AC3, DV...).
+ .
+ This package contains a Debian-specific version of the libavcodec shared
+ object that should only be used by Debian packages.
+
+Package: libavdevice-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 144
+Maintainer: Jeff Moe <moe@blagblagblag.org>
+Architecture: armel
+Source: ffmpeg
+Version: 4:0.5+svn20090706-5
+Depends: libavdevice52 (>= 4:0.5+svn20090706-5) | libavdevice-unstripped-52 (>= 4:0.5+svn20090706-5), libavdevice52 (<= 4:0.5+svn20090706-99) | libavdevice-unstripped-52 (<= 4:0.5+svn20090706-99), libavformat-dev (= 4:0.5+svn20090706-5)
+Filename: pool/fremantle/free/f/ffmpeg/libavdevice-dev_0.5+svn20090706-5_armel.deb
+Size: 55460
+MD5sum: 3f6e1d5bc3b0acca47363c5cdbafd02f
+SHA1: d9bdc3324188cef58ec8c01fd978e5b1006c9d63
+SHA256: 96c7bc23a869ff9a8ee69aad662a29eed5c7f42f6a9d417a630ccf71bc5893e4
+SHA512: 25c2162f73de619fc1e5dd788048cd835c0eb09aa60d2fef9c152ae93cda94888b03b45d7c4863b1b9bf778c474ca41d7d20e8bfbc752c6e1a30814856e73fed
+Description: development files for libavdevice
+ This is the device handling library from the ffmpeg project.
+ .
+ This package contains the header files and static libraries needed to
+ compile applications or shared objects that use libavdevice.
+
+Package: libavdevice52
+Priority: optional
+Section: libs
+Installed-Size: 132
+Maintainer: Jeff Moe <moe@blagblagblag.org>
+Architecture: armel
+Source: ffmpeg
+Version: 4:0.5+svn20090706-5
+Depends: libasound2 (>> 1.0.18), libavcodec52 (>= 3:0.svn20090303-1) | libavcodec-extra-52 (>= 3:0.svn20090303-1), libavformat52 (>= 3:0.svn20090303-1) | libavformat-extra-52 (>= 3:0.svn20090303-1), libavutil49 (>= 3:0.svn20090303-1) | libavutil-extra-49 (>= 3:0.svn20090303-1), libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libx11-6, libxext6
+Filename: pool/fremantle/free/f/ffmpeg/libavdevice52_0.5+svn20090706-5_armel.deb
+Size: 56042
+MD5sum: ee8a3dbae7574e2f3d2ec7aaa6423610
+SHA1: 7c925469f37e606600bd7d6caa3a4b19ff2961cb
+SHA256: 0c5e8747479e78dc5845b9b7f8fc4eee207df1535418f49229e22d7050775479
+SHA512: 21a49c4bde4f6e8a4d6846505dc4e26d3298bd72921b7b992f201f9d5caed84733e4fdf3bfad57276c6b65863fb9ab1550b116245f07f9d1062980e12742a036
+Description: ffmpeg device handling library
+ This is the device handling library from the ffmpeg project.
+ .
+ This package contains a Debian-specific version of the libavdevice shared
+ object that should only be used by Debian packages.
+
+Package: libavfilter0
+Priority: optional
+Section: libs
+Installed-Size: 112
+Maintainer: Jeff Moe <moe@blagblagblag.org>
+Architecture: armel
+Source: ffmpeg
+Version: 4:0.5+svn20090706-5
+Depends: libavcodec52 (>= 3:0.svn20090303-1) | libavcodec-extra-52 (>= 3:0.svn20090303-1), libavutil49 (>= 3:0.svn20090303-1) | libavutil-extra-49 (>= 3:0.svn20090303-1), libc6 (>= 2.5.0-1)
+Filename: pool/fremantle/free/f/ffmpeg/libavfilter0_0.5+svn20090706-5_armel.deb
+Size: 44938
+MD5sum: 647baf7596e8513119382f99b7e8caf9
+SHA1: 6ee3a3f930502ad61f0e54a31a00d2b9bb153222
+SHA256: b3338ed081c0a5c1238e3bb71ac6be094b04fcffed8f6163fa2eface2fbede14
+SHA512: 1026477525a5ecc202351f3026add127c78210d39bd8b2f0007f47f95206051bb18ed056f6ced8eb8d4ba580bf144c3145cc2de838c6bfd283c500d71492d990
+Description: ffmpeg video filtering library
+ This is the video filtering library from the ffmpeg project.
+ .
+ This package contains a Debian-specific version of the libavfilter shared
+ object that should only be used by Debian packages.
+
+Package: libavformat-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 1096
+Maintainer: Jeff Moe <moe@blagblagblag.org>
+Architecture: armel
+Source: ffmpeg
+Version: 4:0.5+svn20090706-5
+Depends: libavformat52 (>= 4:0.5+svn20090706-5) | libavformat-unstripped-52 (>= 4:0.5+svn20090706-5), libavformat52 (<= 4:0.5+svn20090706-99) | libavformat-unstripped-52 (<= 4:0.5+svn20090706-99), libavcodec-dev (= 4:0.5+svn20090706-5)
+Filename: pool/fremantle/free/f/ffmpeg/libavformat-dev_0.5+svn20090706-5_armel.deb
+Size: 440542
+MD5sum: 2330b15c63d24fde1d81672d95bce970
+SHA1: 731c937a7c14d0518a1df954c0abce0487b8d26e
+SHA256: 81a7db0e0097b7c22193207aa54da04c04ecd0d89307930b4168a27354082711
+SHA512: ba1ca4a4db316cf43c21f22fb4bdac3578883d1d610cac67a1835c3ee1d3aa7d4a8979af565621efbb7897179336497313c822252415a7792930eedd5faf14d3
+Description: development files for libavformat
+ This is the demuxer library from the ffmpeg project. It supports most
+ existing file formats (AVI, MPEG, OGG, Matroska, ASF...).
+ .
+ This package contains the header files and static libraries needed to
+ compile applications or shared objects that use libavformat.
+
+Package: libavformat52
+Priority: optional
+Section: libs
+Installed-Size: 720
+Maintainer: Jeff Moe <moe@blagblagblag.org>
+Architecture: armel
+Source: ffmpeg
+Version: 4:0.5+svn20090706-5
+Depends: libavcodec52 (>= 3:0.svn20090303-1) | libavcodec-extra-52 (>= 3:0.svn20090303-1), libavutil49 (>= 3:0.svn20090303-1) | libavutil-extra-49 (>= 3:0.svn20090303-1), libbz2-1.0, libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), zlib1g (>= 1:1.2.1)
+Filename: pool/fremantle/free/f/ffmpeg/libavformat52_0.5+svn20090706-5_armel.deb
+Size: 356588
+MD5sum: 56aebcb2dbaff55e9616244c6dccaa04
+SHA1: 0af8b271c08bd58d9ade75f54f766443fa4350e9
+SHA256: a411e7d4eb51353e881177d38420e1d0ea80946f9cad0f5c46d4333818789946
+SHA512: 1c482dcaadf138ff3960fd908ab5ec3497fdfd650418ef04a81adb2801a0b4ed6e3d2832e80a893bb5c396301593da95e34182f3e119edac33542b96b431fe16
+Description: ffmpeg file format library
+ This is the demuxer library from the ffmpeg project. It supports most
+ existing file formats (AVI, MPEG, OGG, Matroska, ASF...).
+ .
+ This package contains a Debian-specific version of the libavformat shared
+ object that should only be used by Debian packages.
+
+Package: libavutil-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 248
+Maintainer: Jeff Moe <moe@blagblagblag.org>
+Architecture: armel
+Source: ffmpeg
+Version: 4:0.5+svn20090706-5
+Depends: libavutil49 (>= 4:0.5+svn20090706-5) | libavutil-unstripped-49 (>= 4:0.5+svn20090706-5), libavutil49 (<= 4:0.5+svn20090706-99) | libavutil-unstripped-49 (<= 4:0.5+svn20090706-99)
+Filename: pool/fremantle/free/f/ffmpeg/libavutil-dev_0.5+svn20090706-5_armel.deb
+Size: 80330
+MD5sum: 33b3665bdfbecf221cbe3a68a8f4a2d8
+SHA1: bbdd8e93f1e822ea45ef477503a0596f8de33a46
+SHA256: 3e7d0bff8e77869f49aae95b868c72b9f22a808bc59ab1550d46226e8e398dd8
+SHA512: fd772d5a214653757b0740e06c3e5748c6d646efcd3d788ad4f9df0a7c1b2bbab9e0f5a6744b15264dc1531f2a77372cb7c4928c678c172c8745590716b6577a
+Description: development files for libavutil
+ This is the common utility library from the ffmpeg project. It is required
+ by all other ffmpeg libraries.
+ .
+ This package contains the header files and static libraries needed to
+ compile applications or shared objects that use libavutil.
+
+Package: libavutil49
+Priority: optional
+Section: libs
+Installed-Size: 156
+Maintainer: Jeff Moe <moe@blagblagblag.org>
+Architecture: armel
+Source: ffmpeg
+Version: 4:0.5+svn20090706-5
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1)
+Filename: pool/fremantle/free/f/ffmpeg/libavutil49_0.5+svn20090706-5_armel.deb
+Size: 68372
+MD5sum: 4614a7d91c1616029b437487e3ced851
+SHA1: be76c5a1c6a24d4701836b2d1e51228201646e0a
+SHA256: 392a502d1836fa225026ab8dabe1594c2eef8e9633721f75ee721aec23d09588
+SHA512: 7d9f939023788b480965a8d2096dd9d9a293591dcb9c92f711b82be52347b99651502fcf37ca1f32b24108362fe2283f71032d7224972745e75da592e014a373
+Description: ffmpeg utility library
+ This is the common utility library from the ffmpeg project. It is required
+ by all other ffmpeg libraries.
+ .
+ This package contains a Debian-specific version of the libavutil shared
+ object that should only be used by Debian packages.
+
+Package: libevent-2.0-5
+Priority: standard
+Section: libs
+Installed-Size: 312
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Architecture: armel
+Source: libevent
+Version: 2.0.10-stable-1
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1)
+Filename: pool/fremantle/free/libe/libevent/libevent-2.0-5_2.0.10-stable-1_armel.deb
+Size: 139698
+MD5sum: 9faf3c90fe6db7e3e5a556bf265154f9
+SHA1: 360d077ec91f01462320e45fa28f1dc75d074f2c
+SHA256: 88132a1cb2ec1014a018f216a26df2fc0de8c4927ce5e01e601a6157c0f7c759
+SHA512: 73c5d3ed31c7939c2eaabb838c4737bbb49a7f3aec3010b66d0546a59539da93773f5085f18fe8ec7277f56085889c0bba8ff2786fc3fbd0f495e3ee5e3027f1
+Description: An asynchronous event notification library
+ The libevent API provides a mechanism to execute a callback function
+ when a specific event occurs on a file descriptor or after a timeout
+ has been reached.
+ .
+ libevent is meant to replace the asynchronous event loop found in
+ event driven network servers. Currently, libevent supports /dev/poll,
+ kqueue(2), event ports, select(2), poll(2) and epoll(4).
+ .
+ For backward compatibility and to transition to libevent_core only or
+ libevent_core and libevent_extra, the libevent source package builds
+ the libevent library that includes everything in libevent_core and
+ libevent_extra.
+Homepage: http://www.monkey.org/~provos/libevent/
+
+Package: libfaad2-0
+Priority: optional
+Section: libs
+Installed-Size: 396
+Maintainer: Ubuntu MOTU Developers <ubuntu-motu@lists.ubuntu.com>
+Architecture: armel
+Source: faad2
+Version: 2.0.0+cvs20040908+mp4v2+bmp-0ubuntu6maemo1
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1)
+Filename: pool/fremantle/free/f/faad2/libfaad2-0_2.0.0+cvs20040908+mp4v2+bmp-0ubuntu6maemo1_armel.deb
+Size: 205394
+MD5sum: 8b73addbd36573e187099a5de9a095d0
+SHA1: afa11f1bad09b9c28bfe7ce5e17310a903891f67
+SHA256: 3a55b083dbf829bed46d22cc9792a54d0454fda58403c291205afef128e63ed7
+SHA512: c3f48cc80e05d0b203546ac939e5fc73157448162f8fe920b70d063fd05a1fa651b375028e231090a1ac20151d78bba39879a8f404058f90b1076a8b6b0d0ffc
+Description: freeware Advanced Audio Decoder - runtime files
+ FAAD2 is the fastest ISO AAC audio decoder available. FAAD2 correctly
+ decodes all MPEG-4 and MPEG-2 MAIN, LOW, LTP, LD and ER object type AAC
+ files.
+Xsbc-Original-Maintainer: Sebastian Dröge <mail@slomosnail.de>
+
+Package: libpostproc-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 144
+Maintainer: Jeff Moe <moe@blagblagblag.org>
+Architecture: armel
+Source: ffmpeg
+Version: 4:0.5+svn20090706-5
+Depends: libpostproc51 (>= 4:0.5+svn20090706-5) | libpostproc-unstripped-51 (>= 4:0.5+svn20090706-5), libpostproc51 (<= 4:0.5+svn20090706-99) | libpostproc-unstripped-51 (<= 4:0.5+svn20090706-99), libavutil-dev (= 4:0.5+svn20090706-5)
+Filename: pool/fremantle/free/f/ffmpeg/libpostproc-dev_0.5+svn20090706-5_armel.deb
+Size: 58902
+MD5sum: c75f8a60f49f6e3e8bf983d39a4398ad
+SHA1: 3db7a87ae6c23dd730e89c83240b2255bcaf7da2
+SHA256: 754ea9eef856b9461f39705519e130b34b8ce1fc3db56c9bfd29e6815b5f7acf
+SHA512: 111705f9ad0ed441d2bf28c3d6a25e8eee22ee2891be470e2606900b48e5195e4c5b473bea7c54fe791792c62ee27297691ec084245f9b10e3d9c854c60fc19a
+Description: development files for libpostproc
+ This is the video postprocessing library from the ffmpeg project.
+ .
+ This package contains the header files and static libraries needed to
+ compile applications or shared objects that use libpostproc.
+
+Package: libpostproc51
+Priority: optional
+Section: libs
+Installed-Size: 136
+Maintainer: Jeff Moe <moe@blagblagblag.org>
+Architecture: armel
+Source: ffmpeg
+Version: 4:0.5+svn20090706-5
+Depends: libavutil49 (>= 3:0.svn20090303-1) | libavutil-extra-49 (>= 3:0.svn20090303-1), libc6 (>= 2.5.0-1)
+Filename: pool/fremantle/free/f/ffmpeg/libpostproc51_0.5+svn20090706-5_armel.deb
+Size: 59750
+MD5sum: 9c00000043283b89fc8629465f175caa
+SHA1: 3158b37152b44c4d5a4fa702526de120fe9ba481
+SHA256: e49926a35e4f3c31eec0f63a7bc52a7c0af2350f4b884cdde72a19dcc7df3517
+SHA512: 47ebe3661ef35b85ec3a6454cb2c152a6ecbe40eda7033c4db68b3cde42afd76a8277773ee5819a0cb24f3a5b485bb0c9f3cd3edb05362f5b8eac0af70c6b7f1
+Description: ffmpeg video postprocessing library
+ This is the video postprocessing library from the ffmpeg project.
+ .
+ This package contains a Debian-specific version of the libpostproc shared
+ object that should only be used by Debian packages.
+
+Package: libswscale-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 256
+Maintainer: Jeff Moe <moe@blagblagblag.org>
+Architecture: armel
+Source: ffmpeg
+Version: 4:0.5+svn20090706-5
+Depends: libswscale0 (>= 4:0.5+svn20090706-5) | libswscale-unstripped-0 (>= 4:0.5+svn20090706-5), libswscale0 (<= 4:0.5+svn20090706-99) | libswscale-unstripped-0 (<= 4:0.5+svn20090706-99), libavutil-dev (= 4:0.5+svn20090706-5)
+Filename: pool/fremantle/free/f/ffmpeg/libswscale-dev_0.5+svn20090706-5_armel.deb
+Size: 103802
+MD5sum: 95074016dce97062911de262f88e13f7
+SHA1: ad87e75f959805205b95b0d5c7e68f06b1a60e00
+SHA256: 9dc218857a2b810594b259b891cb3ca22d3855060849144961f077115e896c7f
+SHA512: 37dcce8fb76b09ca3ddbcfb471678e92ec710ca9104586271d90fd4ba6939c113ff1b2bb363d6bb02a1df49a7ee2322588435a20e494127d35c6ceec14565357
+Description: development files for libswscale
+ This is the video scaling library from the ffmpeg project.
+ .
+ This package contains the header files and static libraries needed to
+ compile applications or shared objects that use libswscale.
+
+Package: libswscale0
+Priority: optional
+Section: libs
+Installed-Size: 236
+Maintainer: Jeff Moe <moe@blagblagblag.org>
+Architecture: armel
+Source: ffmpeg
+Version: 4:0.5+svn20090706-5
+Depends: libavutil49 (>= 3:0.svn20090303-1) | libavutil-extra-49 (>= 3:0.svn20090303-1), libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1)
+Filename: pool/fremantle/free/f/ffmpeg/libswscale0_0.5+svn20090706-5_armel.deb
+Size: 101242
+MD5sum: 294595e219b425fd166a0c955fc1481e
+SHA1: 7ad74f0a00d5256b04e2954b8aa9b78a82067841
+SHA256: afefd8b18a1cdf1e3032949100415e9a2dd323fa283fae61bc3bbd1c0444e499
+SHA512: 6c41dea1bec8bc8b4de132342ea99dc147f601e6ae819c9f2c13a2e6c3048ab437144fbe16ddd3c2fd085e8def5f3e109f288d4cbd29dd48276345114d6fecfa
+Description: ffmpeg video scaling library
+ This is the video scaling library from the ffmpeg project.
+ .
+ This package contains a Debian-specific version of the libswscale shared
+ object that should only be used by Debian packages.
+
+Package: openssh
+Priority: extra
+Section: user/network
+Installed-Size: 8
+Maintainer: Ed Bartosh <bartosh@gmail.com>
+Architecture: all
+Version: 1:5.1p1-6.maemo5
+Depends: openssh-client (= 1:5.1p1-6.maemo5), openssh-server (= 1:5.1p1-6.maemo5)
+Filename: pool/fremantle/free/o/openssh/openssh_5.1p1-6.maemo5_all.deb
+Size: 2496
+MD5sum: f0ac49680d6fdd6f11d0eb5512d9c6c4
+SHA1: 90bd07662d510e3015c0913b71719b1d25eb0909
+SHA256: 62eda6a14b182d0d6f613a3adee1183b1569ff4a4e37b0838a8d27a6d150fd7d
+SHA512: 5943292dd1acc541bb9c3f245ca9e0c40b8b903f9aa9786817f3aa847bbd9d77c3b2b37dd7419236690534875b8c613717ad887290a035c0cf1029b1ff2c8cee
+Description: Secure shell client and server
+ This is a metapackage depending on both the OpenSSH client and
+ the OpenSSH server, which are now in separate packages.
+ --------------------------------------------------------------------
+ .
+ In some countries it may be illegal to use any encryption at all
+ without a special permit.
+Maemo-Icon-26: 
+ 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
+ YII=
+ ====
+Maemo-Display-Name: OpenSSH Client and Server
+
+Package: openssh-client
+Priority: standard
+Section: user/network
+Installed-Size: 1192
+Maintainer: Ed Bartosh <bartosh@gmail.com>
+Architecture: armel
+Source: openssh
+Version: 1:5.1p1-6.maemo5
+Replaces: ssh
+Provides: rsh-client, ssh-client
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libssl0.9.8 (>= 0.9.8f-5), zlib1g (>= 1:1.2.1), openssh-common, dpkg (>= 1.7.0), passwd
+Suggests: ssh-askpass, xbase-clients
+Conflicts: ssh, sftp, rsh-client (<< 0.16.1-1), dropbear
+Filename: pool/fremantle/free/o/openssh/openssh-client_5.1p1-6.maemo5_armel.deb
+Size: 456018
+MD5sum: d55c390cce0784d6d405a3cc477cd526
+SHA1: 9719aab19f82e8d96b936006c6d1e3bf13843a1c
+SHA256: 63b0c28c3d28c182ca4391deb6688efa4a3f2fe73c82f336d5614cd9893a0473
+SHA512: 5513e4137dd561d9f67d14ddd600351e2f8a0cfac8b918b1b52164f93381b2c2c77fb40dd3bf6c7d8be00f309713c3283399016c64735f45e61229da4495b996
+Description: Secure shell client, an rlogin/rsh/rcp replacement
+ This is the portable version of OpenSSH, a free implementation of
+ the Secure Shell protocol as specified by the IETF secsh working
+ group.
+ .
+ Ssh (Secure Shell) is a program for logging into a remote machine
+ and for executing commands on a remote machine.
+ It provides secure encrypted communications between two untrusted
+ hosts over an insecure network.  X11 connections and arbitrary TCP/IP
+ ports can also be forwarded over the secure channel.
+ It is intended as a replacement for rlogin, rsh and rcp, and can be
+ used to provide applications with a secure communication channel.
+ .
+ This package provides the ssh, scp and sftp clients, the ssh-agent
+ and ssh-add programs to make public key authentication more convenient,
+ and the ssh-keygen, ssh-keyscan, ssh-copy-id and ssh-argv0 utilities.
+ .
+ --------------------------------------------------------------------
+ .
+ In some countries it may be illegal to use any encryption at all
+ without a special permit.
+Maemo-Icon-26: 
+ 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
+ YII=
+ ====
+Maemo-Display-Name: OpenSSH Client
+
+Package: openssh-common
+Priority: optional
+Section: net
+Installed-Size: 200
+Maintainer: Ed Bartosh <bartosh@gmail.com>
+Architecture: armel
+Source: openssh
+Version: 1:5.1p1-6.maemo5
+Replaces: openssh-client (<= 1:4.3p2-9.maemo3), openssh-common (< 1:5.1p1-6.maemo5)
+Conflicts: openssh-client (<= 1:4.3p2-9.maemo3), ssh, dropbear, openssh-common (< 1:5.1p1-6.maemo5)
+Filename: pool/fremantle/free/o/openssh/openssh-common_5.1p1-6.maemo5_armel.deb
+Size: 82822
+MD5sum: 99c4a28a2934bd6ec16c42dcd673c8e0
+SHA1: 955a4e21689cc906e2a746ba1c4b5d9d2393e6a0
+SHA256: 5d811eeba61b27853156f1025d6cb6d89e3c2583096f4210aae1e45d4c97e52e
+SHA512: 5ce7d14d58925da128c8b9e869e078c52600fa0b40057dbc1499e01b876d212015f1abbd4d9c7ca32e89572710fadcffcc5daeddd44fb7679686f6662ee2bcf7
+Description: Common files fro ssh server and client
+ This is the portable version of OpenSSH, a free implementation of
+ the Secure Shell protocol as specified by the IETF secsh working
+ group.
+ .
+ This package provides common binaries and configuration files
+ for ssh server and client
+ .
+ --------------------------------------------------------------------
+ .
+ In some countries it may be illegal to use any encryption at all
+ without a special permit.
+
+Package: openssh-server
+Priority: optional
+Section: user/network
+Installed-Size: 456
+Maintainer: Ed Bartosh <bartosh@gmail.com>
+Architecture: armel
+Source: openssh
+Version: 1:5.1p1-6.maemo5
+Replaces: ssh, openssh-client (<< 1:3.8.1p1-11)
+Provides: ssh-server
+Depends: libatk1.0-0 (>= 1.24.0), libc6 (>= 2.5.0-1), libcairo2, libfontconfig1 (>= 2.6.0), libfreetype6 (>= 2.3.9), libgcc1 (>= 1:4.2.1), libglib2.0-0 (>= 2.20.0), libgtk2.0-0 (>= 2:2.12.9-0osso1), libpango1.0-0, libssl0.9.8 (>= 0.9.8f-5), zlib1g (>= 1:1.2.1), openssh-common (= 1:5.1p1-6.maemo5), dpkg (>= 1.9.0), osso-af-startup
+Conflicts: ssh, ssh-nonfree (<< 2), ssh-socks, ssh2, sftp, rsh-client (<< 0.16.1-1), dropbear
+Filename: pool/fremantle/free/o/openssh/openssh-server_5.1p1-6.maemo5_armel.deb
+Size: 184782
+MD5sum: 56fc13a476801a0450d9cd9bdbcc8171
+SHA1: fef590b26af2916b5fd3d2ce14769680b015b99f
+SHA256: 95b63f50571806105cb8746de048d11e56d1cb4c7b52331ec0d769f7ffa2180f
+SHA512: fe853124abde5d8b824cbdc4f51c3a3a95c74722304f49252d3021a09cd5e15757501a12f9d1f02ec03712a2763c799378c1e25fae68767d46e622707e2c1bd5
+Description: Secure shell server, an rshd replacement
+ This is the portable version of OpenSSH, a free implementation of
+ the Secure Shell protocol as specified by the IETF secsh working
+ group.
+ .
+ Ssh (Secure Shell) is a program for logging into a remote machine
+ and for executing commands on a remote machine.
+ It provides secure encrypted communications between two untrusted
+ hosts over an insecure network.  X11 connections and arbitrary TCP/IP
+ ports can also be forwarded over the secure channel.
+ It is intended as a replacement for rlogin, rsh and rcp, and can be
+ used to provide applications with a secure communication channel.
+ .
+ This package provides the sshd server.
+ .
+ --------------------------------------------------------------------
+ .
+ In some countries it may be illegal to use any encryption at all
+ without a special permit.
+Maemo-Display-Name: OpenSSH Server
+Maemo-Icon-26: 
+ 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
+ YII=
+ ====
+
+Package: rootsh
+Priority: optional
+Section: user/system
+Installed-Size: 32
+Maintainer: Faheem Pervez <trippin1@gmail.com>
+Original-Maintainer: Tomi Ollila <too@iki.fi>
+Architecture: all
+Version: 1.8
+Replaces: becomeroot, easyroot, GodMode
+Provides: becomeroot, easyroot, GodMode
+Depends: sudo
+Conflicts: rootsh (<= 1.5), becomeroot, easyroot, GodMode
+Filename: pool/fremantle/free/r/rootsh/rootsh_1.8_all.deb
+Size: 1502
+MD5sum: b2deff086691a8fe356d492265072e73
+SHA1: 912b33e10ab2352fa49926628d3a76002053f526
+SHA256: 913ae29f93cc609f67a95cae43393f803524014cdde3e58869abf4b8dd3d8c93
+SHA512: 76bd8cdd3fc8a82ec5b8f04c8ae2168adade294ee2d06f174ee005dbb740d6b5aae060c74e01ec4c37fa2652354004e846dc04d933301047531f86c62bcb21a7
+Description: Enable root access, via the "sudo gainroot" command
+ "sudo gainroot" will work without requiring you to enable R&D mode.
+
+Package: sudser
+Priority: extra
+Section: user/system
+Installed-Size: 36
+Maintainer: Andrew Zabolotny <zap@homelink.ru>
+Architecture: all
+Version: 0.2.0-4
+Replaces: becomeroot, easyroot, rootsh
+Filename: pool/fremantle/free/s/sudser/sudser_0.2.0-4_all.deb
+Size: 6670
+MD5sum: 2e1111d902faa32dad8917c3d8a031d7
+SHA1: 42f924a3480f6921c5c5e729f9f8b6e3a8ac56f5
+SHA256: 140915bd3ae95bf033346f41a52ee34f6b4af72d6fa17418b456482d5f25a00b
+SHA512: 0084b6ec30638a2c832791139f5574ebbe3ff79e81a44be0fb0308c52ef63b3ba69e64f7892aa0675461925f72b4046bc4005fd0f1deef3608678a9d24635f3e
+Description: Allow user to execute commands with root priviledges.
+ This package contains additional config files to 'sudo', which
+ makes it work similar to Ubuntu. Unlike most similar packages
+ (becomeroot, easyroot, rootsh), it can provide additional security
+ by protecting root access with a password.
+ .
+ It also contains the additional 'rush' command which will
+ give you easy access to a root login shell.
+Bugtracker: mailto:zap@homelink.ru
+Maemo-Icon-26: 
+ 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
+
+Package: tinysmb
+Priority: optional
+Section: user/network
+Installed-Size: 248
+Maintainer: Karl Wintermann <karl_wintermann@gmx.de>
+Architecture: armel
+Version: 1.0.0
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libstdc++6 (>= 4.2.1-4maemo9+0m5)
+Filename: pool/fremantle/free/t/tinysmb/tinysmb_1.0.0_armel.deb
+Size: 70682
+MD5sum: 40a7a93c51e6847284b950da0e8442d6
+SHA1: a2d04df853945def293b6d402be3c5c420477f44
+SHA256: 07d4a2ab3b1dd702b6662c2dabec12e3a0fb7b4043dd33197ca26699a6fc835e
+SHA512: b613ef00041aa8703f808d1f9a9788ba7bc32d4f08eae4a5a8e1171184590301844559bd91e6902d68c11dfb9597a582e6e60e36e556742ec7fbcdb765cd5009
+Description: small SMB Server
+ TinySmb is a small SMB server for embedded systems.
+ A SMB server allows the access to local files via network.
+ TinySmb for Maemo is a port of Anton Zechners AzSmb
+ www: http://members.inode.at/anton.zechner/az/index.html
+ mail: az_software@inode.at
+ Copyright: Anton Zechner, 2003
+
+Package: tinysmbgui
+Priority: optional
+Section: user/network
+Installed-Size: 224
+Maintainer: Karl Wintermann <karl_wintermann@gmx.de>
+Architecture: armel
+Version: 0.0.2
+Depends: libc6 (>= 2.5.0-1), libgcc1 (>= 1:4.2.1), libqt4-core (>= 4.6.2~git20100224-0maemo1+0m5), libqt4-dbus (>= 4.5.3~git20090723-0maemo4+0m5), libqt4-gui (>= 4.5.3~git20090723-0maemo6+0m5), libqt4-network (>= 4.5.3~git20090723-0maemo4+0m5), libqt4-xml (>= 4.5.3~git20090723-0maemo4+0m5), libstdc++6 (>= 4.2.1-4maemo9+0m5), tinysmb
+Filename: pool/fremantle/free/t/tinysmbgui/tinysmbgui_0.0.2_armel.deb
+Size: 58568
+MD5sum: caba83deddf82b5fcdba5afe0280bdd9
+SHA1: d287e8055750e67e4fd8a3b1b109fa4332859bf2
+SHA256: 4fbfd0bc50e925bc09b3fd59e7a65d3fb42edf50eebf98a23cf83f6b73276a7a
+SHA512: 6f73bada80dc6bbfb0761d184158c95c849482d5ba202d875a7191afe82264209e9532510271f19d74d1f242abe2491610de7cab218128391295f2abe6a5809d
+Description: GUI for Tinysmb
+ Tinysmb is a SMB-Server like Samba.
+ A SMB server allows access to local files via network.
+Maemo-Icon-26: 
+ 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
+ V1ezvLy8+KZNm97u7Owc7+vri83OzqZN0yqWSmE2MYtkMomxsTHSNM46Ojqc
+ 7u7u10tKSt4HoK1du1YueVr+JXuBowAKAFQCuFFKlfns7J9w7twnLD59hYiI
+ zc7O4qOPPsK5c+fYmjVr0NLSMq1p2gld1/+nvr4+3dDQ0JlKpTqEEHWFhYX/
+ qWlaZs2aNatqa2uLJyYm9OnpOCzLwk03rcLk5CRmZuKspaUl09vb+49VVVUf
+ AjCJlj89uJpbTHcAuLOhsXH6zjt3bn7rN2/eYlmW3dbWlmhrazu9bdu2P7W1
+ tf26ubl5kDFm5+fn8+3btxvxeDzY1dUVXbVqVfTIkSNTVVVV2Lp1a8G2bdua
+ 4vH49ng83l1QUNhx6dJlb5NjyI6Ojv8Kh8MniWiWMfYeY+yd6/7xA2NM8/YM
+ +OEP/7b0l798/Z6jR49uJKLQF31u//79/vOenp6FyWN1dY3fPnDgX+j733+S
+ Dh58YyyVSj2vlHqZiH6nlHohHo8XfGFcX9evO86dO4fm5mYAwDLKttw9n8BP
+ f/av641gsLy4uPhTIawLFRUV0bq6ugIpZfLRRx8d37RpEx04cGDJT/8vAeL7
+ LZZxn1wAAAAASUVORK5CYII=
+
+Package: tmux
+Priority: optional
+Section: admin
+Installed-Size: 448
+Maintainer: Karl Ferdinand Ebert <kfebert@gmail.com>
+Architecture: armel
+Version: 1.6-2maemo2
+Depends: libc6 (>= 2.5.0-1), libevent-2.0-5 (>= 2.0.10-stable), libncurses5 (>= 5.7+20081213-1.maemo1+0m5)
+Filename: pool/fremantle/free/t/tmux/tmux_1.6-2maemo2_armel.deb
+Size: 211822
+MD5sum: 76da6da40c101b38e8e1a21dd25fb5c4
+SHA1: c04eb9bb1f487d90b7fbcaffcf868c44f07bcfcf
+SHA256: 459ce51db24d2ad8e8b9ff1fe8059cd00e7569530ccb8ca992d5eb991baa0ccd
+SHA512: f1160c6ca553d82e942ce1c5bf23033f70651663b26e1432e2dbc3256869b0906457335248edea2e380203ff611b6fcc0a70e04fd3aded362ba9fb5243dfd37a
+Description: terminal multiplexer
+ tmux enables a number of terminals (or windows) to be accessed and
+ controlled from a single terminal like screen. tmux runs as a
+ server-client system. A server is created automatically when necessary
+ and holds a number of sessions, each of which may have a number of
+ windows linked to it. Any number of clients may connect to a session,
+ or the server may be controlled by issuing commands with tmux.
+ Communication takes place through a socket, by default placed in /tmp.
+ Moreover tmux provides a consistent and well-documented command
+ interface, with the same syntax whether used interactively, as a key
+ binding, or from the shell. It offers a choice of vim or Emacs key
+ layouts.
+Homepage: http://tmux.sourceforge.net/
+
+Package: u-boot-bootimg
+Priority: optional
+Section: admin
+Installed-Size: 304
+Maintainer: Pali Rohár <pali.rohar@gmail.com>
+Original-Maintainer: Clint Adams <clint@debian.org>
+Architecture: armel
+Source: u-boot
+Version: 2013.04-1
+Filename: pool/fremantle/free/u/u-boot/u-boot-bootimg_2013.04-1_armel.deb
+Size: 125118
+MD5sum: a7019e45f249c289f9d1c28f4e700f1c
+SHA1: 8d475c5c814221db751c81e3cc0f688bf863ad1b
+SHA256: e068608b1c1f929cc07c6994b941c22d3a96036f37ef644ece1701d403d6c70b
+SHA512: 585ee704578b9186d4784ecf0f9fca4d432fe54c31421a80fc86a96a9bdd7d6dc7d7c88eecafba0db377a7b57c4b6ec7fe6a696ada5ee89c6b6ac0aa6eb84863
+Description: Das U-Boot bootloader for Nokia N900 (boot image)
+ Das U-Boot is a cross-platform bootloader for embedded systems,
+ used as the default boot loader by several board vendors.  It is
+ intended to be easy to port and to debug, and runs on many
+ supported architectures, including PPC, ARM, MIPS, x86, m68k,
+ NIOS, and Microblaze.
+ .
+ This package contains only bootloader image without any kernel.
+Homepage: http://www.denx.de/wiki/U-Boot/
+
+Package: u-boot-flasher
+Priority: optional
+Section: user/system
+Installed-Size: 2040
+Maintainer: Pali Rohár <pali.rohar@gmail.com>
+Original-Maintainer: Clint Adams <clint@debian.org>
+Architecture: armel
+Source: u-boot
+Version: 2013.04-2
+Replaces: multiboot, u-boot-for-power-kernel, uboot-power, uboot-pr13
+Depends: kernel-modules (= 2.6.28-20103103+0m5)
+Pre-Depends: u-boot-tools, softupd, fiasco-image-update-ask
+Conflicts: multiboot, u-boot-for-power-kernel, uboot-power, uboot-pr13
+Filename: pool/fremantle/free/u/u-boot/u-boot-flasher_2013.04-2_armel.deb
+Size: 1860222
+MD5sum: 259632e775517ae096b7eedd53f7f549
+SHA1: eef2d946e38da20bf18c6502bbd51160dd879e4f
+SHA256: 30b17d3cc113b7deb80bb50be9f8d7bbe829877cf55b15fdf7387b3f41f1e3dd
+SHA512: 7d5d36a72578d7d5d00047b45fe553aaee30853185d84003a96fe4a0401ba8ae499727a6ca21100beae67991b4bb31b8a63db3e59093e95a1869d40b8cfd8b04
+Description: Das U-Boot bootloader for Nokia N900 (flashable image with kernel 2.6.28-omap1)
+ Das U-Boot is a cross-platform bootloader for embedded systems,
+ used as the default boot loader by several board vendors.  It is
+ intended to be easy to port and to debug, and runs on many
+ supported architectures, including PPC, ARM, MIPS, x86, m68k,
+ NIOS, and Microblaze.
+ .
+ U-Boot bootloader is needed for dual booting other kernels or
+ booting other systems.
+ .
+ This package contains combined image: U-Boot binary with
+ official Nokia PR1.3 kernel 2.6.28-omap1.
+ .
+ After installation it will flash and replace existing kernel.
+Homepage: http://www.denx.de/wiki/U-Boot/
+Maemo-Display-Name: U-Boot with kernel 2.6.28-omap1
+Maemo-Icon-26: 
+ iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QAAAAA
+ AAD5Q7t/AAAACXBIWXMAAABIAAAASABGyWs+AAAACXZwQWcAAAAwAAAAMADO
+ 7oxXAAAK60lEQVRo3sWZf2yU933HX997nnvuB2efz9g+E2M72IADxqAZI5IU
+ BiWzkrYRdbpNESyNupJGk1aVsZYt2qZJHVsbpZsR2ZooS0q7ZDTZJFdhVgLp
+ pk7NCq6CHZPMccAXjB3bwBkfPp/x/X6ez/7wHTmf7WB7TvlIH92P5/t9f9/v
+ z/fz/fnAZ2ONwA+ATmACsIBxoAP4O2DdZ9Tu/9v8wOuACUi+a5omfr9fdF1P
+ AT8CSu404VxzA91zEc96QUGBPPnkk7J7925xuVwCfAjcdaeJZ+3gp5EHxOPx
+ SE1NjXg8HrHZbNn/2wHtTpMH+OXtBMzjJvDAnSYPEALEZrNJUVGRaJo2i6xS
+ StasWSM+ny//2U+X2qhaJvIakPJ4PGrXrl2YpkkwGOT8+fOICD6fj3379lFV
+ VcXIyAi9vb2cOXOGeDyerT8MrAUSdyT0gA7I008/LZcuXZJQKCSHDx++NfO0
+ t7dLJBKRQCAgkUhEjh8/njsGsmlUfqfIZ818+eWXZf369XLkyBF55513xOv1
+ ypo1a8Q0TXnsscekrq5OWltbxTRNqa2tzRdQtpRGbcso4Obk5CQDAwN0nD2D
+ NvkrWu6P8MWmMaLX3ub999/n4sWLHDt2DMuycLvduXWTGV+0LdcYALh86NCh
+ uwv1Cerdx9m2Ae5eV8BAIE5xaYp3+3RePW3S/JXv0bD9ETZu3IhlWbn164C+
+ ZeSzaOts3mLIYNsKsc4h0olId61Ipy7SaRN5t0Lk3bvEfMcm//1DQwx91nT6
+ taU0umwppGuM/vmjSSqrplAKwA7W6DQ3bQ3YXFwfvUFXl0VDbRKHPl1PqVtJ
+ 8PAdFZA2Gf15l4fAh5BOA6RAJrHEzcjQGB+cv0QqGad+I/yqZz03EwqHw0FL
+ Swt1dXUopb4ArFpsu8u5hH9p1caHG92u9YQHL6HbLSYnIRhM4i1M4HJqBOPN
+ 3Cg4grv2AOfOnWNkZASv10tTUxOXL1+2x+NxC/jPOyHAAbTu2LmzaM8jf8yH
+ Q07S44OQtojHXQyF7ydW/j1qd/wFlWsbqaiooLy8nLa2NoaGhujr62NychJg
+ K3ASGF3GwN7WFNCqaZqcPHlSksmknD17Vl566SV58cUX5Y033pBAICDJZFJy
+ zTRNOXDgwFx7o27A85sU8C3AOnTokFiWJSIisVhMent7pbe3V27cuHHr/3z7
+ 6KOPxOl0ziXiBL+hHeofAKn6+nqZmpqaFWHTNOXTzLIs2bt373y71O9+1uR3
+ AlEye6DFWCqVklgsJvF4XE6fPi1KqbkEpIHHb0dCXyL5EuBfAVdxcTEOh4OB
+ gQGqqqqw2Wwkk0k+/vhjPB4Pfr//1lwfDofp7+9neHiYaDSKpmls376d++67
+ j46ODpRSuauzBjwHfAB0LXf0X8hGraWlRbq7u2VycnJGrs+XPslkUkKhkFy4
+ cEFOnTolr7zyirS1tYlhGFJZWSmrV6/O75Eepo+ry2YbbDZbsry8XIqLi6Wn
+ p2dR6ZNr6XRaAoGAnDp1Svbv3y+AeL1e8Xq9+en0t8sp4J/9fr94PB45duzY
+ ksnn2sTEhHR2dorT6ZSamhopKiqSlStX5gqIAtXLQb7EbrdPVVVVSVNTk8Ri
+ sWURkLWdO3feOo5u2rQp/9Dz3FyEFrsX+qMVK1a4Q6EQBw8exOl0zllIRJYU
+ nd27dxMOhzFNk0gkgsPhyH38Vea4R1qMgDLgYCqVQilFc3PzvAUHBweXJKCx
+ sfHW9/Hx8fzzggfYu1QBCvgHu91eUlFRQWNjI2Vlc58ARYSRkZElCSgqKpqB
+ k0ql8ovsWaqAPcA+TdNwOBxs3rw5dx8/w9Lp9JJTKBezsrJyLpy1SxWwA9AS
+ iQRKKVwu17wFTdOcV9xCTdd1EonEXAJmXbssaCVe6aX7zx6H7fXCCyc/Ihb7
+ 7U8tv9QeuHr1Kn6/n8LCQq5du0Z1dTWGYaBpGhcuXAD4xaJBC1y4/vdH6qy8
+ WyzSfbeY51zyV0+45JlnnpFUKjXn4nT27NlFTZ+p/u9IqmuT9L1eIW6nbda+
+ qK6uTlp2282GWvWFRZF32tGe+xYvSpdX5L3fEnlvq8j5ejHP6XJgr5KHHnpI
+ hoeHZxEaHx9fMHkznZSpjnUi5zdK8E2/qDl2pk/u1UTO18uHP6u4mM9x1hhw
+ O3BuWk1dy73se+GbtP/h76snsPk+Kaqc2PRVHDsMN4ZO09jYSFtb24y0yZ1N
+ bpdql/sDhIKjkO5j7EqQR7aCkUlslwFffwB+cMgB5hDFhTFfPsaM0fZ7n+PR
+ 1u/wbLlflSkFygaa7gatBpSRU9KEdD/9QxGavgrhm4r9+/dz9OhRSktLF9zD
+ 8Xic/3rrDapCj7N5S5SJcbjYAwMfw2QUVpXBtns1Slf5QblJJOOJB75xZceZ
+ 963OOXtg51Yerqxyl9nddeiue9AcG0Bfl0ceQAOtkprVBs8/BQrhxIkT7Nix
+ g3A4vGABuq7jcBhMhMGywOuDzU3Q/CB85XfhgQeh9K4q0FaBzYvD6Xe8fqzm
+ 9J4m/dZ1/AwBoTEGkCRggHKDcjHvyU45Qavk0QdtPPHl6b8CgQCBQGDBAmw2
+ G1dGhohOJkhlLhadbgNfqRNfsYHD5QWbd0adkmLvylPPb3jz6Ld93/cVKt+M
+ abRnkCEREyU3QfkWwKAIpJTWbwdxle5h266v09DQsGABHR0dfP9v/pLnv2Fi
+ WYAqAv1uQIGY0zk8RwANwzD+5PGap760M/jlGT1Q4sOulJ6J/ELDuJIVLjt/
+ /VgPv7Orcd4NXq5Fo1FaW1tpbm7Go8Ks8IBu10AryxC2gbJzu3P9+ER6LNsD
+ CjB2b+fz0z8tpmewhayoGiid4hWj/Pr0wwSb/o2GLVtnrMYiQiQSoauri/b2
+ dk6cOMH169cBWOsHTyFougOwL6A9i2vByes//PfrR599deLZrAADcG1vYBuk
+ IB34ZAwox3S+Y2SikjfzKg1QiECRvZ8//dq9XIrVUl1djdPpJBQKEQwGGR4e
+ JpGY/QKmthwMB5n7VDPvqYCkgTRmOkpfIBL8p9ciz738Vvr4zThjQELPMNIB
+ /XArR57az3fLfOm7dD2C3Yhgd4DDAXbDhm43ULZCUB5QOoiAhEHixKKQjEOl
+ z+TUe3309S3sprzYA8kExKbiuD3BzKDVgCSWOUXsZoz+S4nos69Zx199m59M
+ JRhj+l2CHUjpn0iFn73NW+1n6Kgs5p715TTW+LmndhXrqv1U+UutwuKSuFpZ
+ GsdTOIphKFCCWDB1E64MwbURuBYmBVwErgExpjdgsZzvGlDI9Cul6tAE1eNj
+ GA6nRWHROA5HGEsUNyMWo1fhrTP8+h/f5O+vTnA5gzEjr7M/DMCVcWfOpxNw
+ GhqeskJW11ew5XMb2Na4no2lJTidmbEenYKrI6R++ktee72bk2mLwcxAym9L
+ y8F1AI4da9l58It8s7gEm9MFmgbpFIxdJ/kvv+DH/3GeV02LaE4Q4pnPKJBQ
+ OeD2XNLZBjJuZJ7rgFbgpKBhNQ0Nq9mysoBVsQQTP++h7YMrdGeinABS2Z7N
+ 4NsyOLmYulLYGyvZum0N9xe6KQbMq2EG/6eP0wMhApl0SWSI53oCsPKnGS0D
+ bOQRv0U+QyRbTzKRNpm+SUtniCdz3MrUNXI8H1NlPItn5WDl4mWDk84GZ755
+ MruC6Hlum0NA9i1j1lM5YrJplO2BXOL5AVFz4OUGJYs347Cx0KOTmsOzlm10
+ FvgC8GwLwPtUzP8D2ZiyXz3Y3nwAAAAldEVYdGNyZWF0ZS1kYXRlADIwMTAt
+ MDItMDZUMTk6Mjk6MjMrMDE6MDBL9SgPAAAAJXRFWHRtb2RpZnktZGF0ZQAy
+ MDA5LTA5LTI3VDA5OjM1OjM0KzAyOjAwrPojkwAAAABJRU5ErkJggg==
+
+Package: u-boot-tools
+Priority: optional
+Section: admin
+Installed-Size: 156
+Maintainer: Pali Rohár <pali.rohar@gmail.com>
+Original-Maintainer: Clint Adams <clint@debian.org>
+Architecture: armel
+Source: u-boot
+Version: 2013.04-1
+Replaces: mkimage, uboot-mkimage
+Depends: libc6 (>= 2.5.0-1)
+Conflicts: mkimage, uboot-mkimage
+Breaks: mkimage, uboot-mkimage
+Filename: pool/fremantle/free/u/u-boot/u-boot-tools_2013.04-1_armel.deb
+Size: 53144
+MD5sum: 85b371b450cc9b86b4b7fe1c96878725
+SHA1: 03982513c04649b7d4c77da070ba9ec5f740c652
+SHA256: 7b01292392d01bcabc485735647b9fc7532ed7c269d7eed9a95bc8f26befa66c
+SHA512: 419e9581e45ebb665890e91f4f7fc303a56799ebb597ebfee72e569862180c2e22291baae3b420dd99b7c8060de7545abac9381807a5b9fa5a5a67228f2b259f
+Description: Das U-Boot bootloader for Nokia N900 (companion tools)
+ This package includes the mkimage program, which allows generation of U-Boot
+ images in various formats, u-boot-update-bootmenu script for generating bootmenu
+ and u-boot-gen-combined script for generating combined images (u-boot + kernel)
+Homepage: http://www.denx.de/wiki/U-Boot/
+
+Package: u-boot-tools
+Priority: optional
+Section: admin
+Installed-Size: 160
+Maintainer: Pali Rohár <pali.rohar@gmail.com>
+Original-Maintainer: Clint Adams <clint@debian.org>
+Architecture: armel
+Source: u-boot
+Version: 2013.04-2
+Replaces: mkimage, uboot-mkimage
+Depends: libc6 (>= 2.5.0-1)
+Conflicts: mkimage, uboot-mkimage
+Filename: pool/fremantle/free/u/u-boot/u-boot-tools_2013.04-2_armel.deb
+Size: 53334
+MD5sum: 766c51cad53e83f4420ea5fd7b452874
+SHA1: 3cd9bf508bc456a466003b91b6565f0690b80df9
+SHA256: 13905dc86a81f2654f85175536166e971ee90016bfb313f46393d1948807dc44
+SHA512: 45c94715cfc28bf353e09a3369020fa11ce4fbc25b35e77302cb212e4a5bf6d5e84230b0b915e1efde2b3366ac1da7263444e7b257cce4f5972d501c0e8e9ca3
+Description: Das U-Boot bootloader for Nokia N900 (companion tools)
+ This package includes the mkimage program, which allows generation of U-Boot
+ images in various formats, u-boot-update-bootmenu script for generating bootmenu
+ and u-boot-gen-combined script for generating combined images (u-boot + kernel)
+Homepage: http://www.denx.de/wiki/U-Boot/
